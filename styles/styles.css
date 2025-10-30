@@ -9,12 +9,16 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
   min-height: 100vh;
+  min-width: 680px;
   padding-top: 147px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.375;
   color: #1f1e1e;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .page-header{
@@ -222,4 +226,41 @@ body {
 
 .listing__event-card {
   width: calc(33.333% - 40px);
+}
+
+.event {
+  padding: 40px 0 150px;
+}
+
+.reserve {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: 
+    "checks scheme"
+    "order legend"; 
+  width: 100%;
+}
+
+.reserve__checks {
+  grid-area: checks;
+}
+
+.reserve__order {
+  grid-area: order;
+}
+
+.reserve__scheme {
+  grid-area: scheme;
+}
+
+.reserve__scheme {
+  grid-area: scheme;
+}
+
+.reserve > div {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: coral;
+  text-align: center;
 }
