@@ -1,18 +1,37 @@
-<!-- <section class="listing home__listing">
-  <h2 class="listing__section-title section-title">Блог</h2>
-    <div></div>
-</section> -->
+<section class="listing @@class">
+  <h2 class="listing__title section-title">Блог</h2>
 
-<!-- <article class="article-card @@class">
-  <a href="#" class="article-card__link">
-    <picture class="article-card__picture">
-      <img src="@@img" alt="@@alt" class="article-card__img" />
-    </picture>
-    
-    <h4 class="article-card__title">@@title</h4>
-    
-    <p class="article-card__description">@@description</p>
-    
-    <time datetime="@@datetime" class="article-card__time">@@time</time>
-  </a>
-</article> -->
+  <div class="listing__article-list">
+    <!-- prerrier-ignore -->
+    @@loop('article-card.html', [
+    {
+    "class": "listing__article-card",
+    "img": "assets/images/theatre.jpg",
+    "alt": "Theatre Photosession",
+    "title": "Фотосессия в стенах Театра драмы",
+    "descr": "Организовывая фотосессию для...",
+    "time": "26.11.2021",
+    "datetime": "2021-11-26T00:00"
+    },
+    {
+    "class": "listing__article-card",
+    "img": "assets/images/theatre.jpg",
+    "alt": "Theatre Photosession",
+    "title": "Фотосессия в стенах Театра драмы",
+    "descr": "Организовывая фотосессию для...",
+    "time": "26.11.2021",
+    "datetime": "2021-11-26T00:00"
+    },
+    {
+    "class": "listing__article-card",
+    "img": "assets/images/theatre.jpg",
+    "alt": "Theatre Photosession",
+    "title": "Фотосессия в стенах Театра драмы",
+    "descr": "Организовывая фотосессию для...",
+    "time": "26.11.2021",
+    "datetime": "2021-11-26T00:00"
+    }
+    ])
+  </div>
+  <a href="#" class="listing__link link">Смотреть все</a>
+</section>
