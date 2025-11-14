@@ -1,32 +1,37 @@
 .reserve {
   display: grid;
   gap: 65px 11%;
-  grid-template-columns: 405px calc(89% - 405px);
-  grid-template-areas: 
+  grid-template-columns: 405px 1fr;
+  // grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas:
     "checks scheme"
-    "order legend"; 
+    "order legend";
   width: 100%;
 
-&__checks {
-  grid-area: checks;
-}
+  &__checks {
+    grid-area: checks;
+    background-color: yellow;
+  }
 
-&__scheme {
-  grid-area: scheme;
-}
+  &__scheme {
+    grid-area: scheme;
+    background-color: rgb(255, 162, 0);
+  }
 
-&__order {
-  grid-area: order;
-}
+  &__order {
+    grid-area: order;
+    background-color: rgb(76, 0, 255);
+  }
 
-&__legend {
-  grid-area: legend;
-}
+  &__legend {
+    grid-area: legend;
+    background-color: rgb(255, 0, 81);
+  }
 
-.reserve > div {
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: coral;
-  text-align: center;
-}
+  .reserve>div {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: coral;
+    text-align: center;
+  }
 }

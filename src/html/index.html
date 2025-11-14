@@ -1,34 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="showe-event-popup">
+
 @@include('blocks/head.html')
 
 <body class="body">
+ 
   @@include('blocks/page-header.html')
+  
   <main class="main">
     <div class="home">
-      <header class="main-header home__main-header">
-        <h1 class="main-header__heading">ART-ПРОСТРАНСТВО</h1>
-        <img class="main-header__Lenni" src="/assets/images/LENNI.png" alt="Lenni" />
-        <div class="main-header__container">
-          <p class="main-header__paragraph">для людей, горящих сердцем и делом место для настоящего</p>
-        </div>
-      </header>
 
-      <section class="offers home__offers">
-        <h4 class="offers__title">Я ХОЧУ:</h4>
-        <div class="offers__btns">
-          <button class="offers__btn btn btn--red" type="button">Провести мероприятие</button>
-          <button class="offers__btn btn" type="button">Стать арендатором</button>
-        </div>
-      </section>
+      @@include('blocks/main-header.html')
 
-      <section class="about home__about">
-        <h2 class="about__section-title section-title">О нас</h2>
-        <div class="about__container"></div>
-      </section>
+      @@include('blocks/offers.html')
 
       @@include('blocks/about.html')
-
 
       <!-- <section class="upcoming home__upcoming">
        <h2 class="upcoming__section-title section-title">Мероприятия</h2>
@@ -41,6 +27,7 @@
 
           <div class="listing__events-list">
             <!-- prettier-ignore -->
+
             @@loop('blocks/event-card.html', [
             {
             "class": "listing__event-card",
@@ -53,8 +40,8 @@
             },
             {
             "class": "listing__event-card",
-            "img": "assets/images/nirvana.jpg",
-            "alt": "stuff",
+            "img": "assets/images/Stuff.jpg",
+            "alt": "Stuff",
             "title": "Есть тема, нужно обсудить с HowStuffWorks",
             "descr": "Один из самых популярных подкастов в мире...",
             "time": "14.12.2022 | начало 18.30",
@@ -62,8 +49,8 @@
             },
             {
             "class": "listing__event-card",
-            "img": "assets/images/nirvana.jpg",
-            "alt": "stuff",
+            "img": "assets/images/Sade.jpg",
+            "alt": "Sade",
             "title": "Есть тема, нужно обсудить с HowStuffWorks",
             "descr": "Один из самых популярных подкастов в мире...",
             "time": "14.12.2022 | начало 18.30",
@@ -79,19 +66,17 @@
       <!-- prettier-ignore -->
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
-      <section class="contacts home__contacts">
-        <h2 class="__section-title section-title">Контакты</h2>
-        <div class="contacts__container"></div>
-      </section>
+      @@include('blocks/contacts.html')
 
       <div class="doit"></div>
 
     </div>
-    </div>
   </main>
-  <footer class="page-footer">
-    footer
-  </footer>
+
+  @@include('blocks/page-footer.html')
+
+  @@include('blocks/event-pp.html')
+
 </body>
 
 </html>

@@ -11,10 +11,13 @@
 </head>
 
 <body class="body">
+
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-icon" src="/assets/images/logo.svg" alt="logo" />
+        <svg class="page-header__logo-icon" width="202px height=147">
+          <use xlink:href="assets/icons/symbols.svg#logo">
+        </svg>
       </a>
 
       <nav class="page-header__nav">
@@ -54,20 +57,20 @@
           <article class="event-card listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                <img src="assets/images/Stuff.jpg" alt="Stuff" class="event-card__img" />
               </picture>
 
-              <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h4>
+              <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
 
-              <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+              <p class="event-card__description">Один из самых популярных подкастов в мире...iption</p>
 
-              <time datetime="2024-12-07T18.00" class="event-card__time">07.12.2024 | начало 18.00</time>
+              <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
             </a>
           </article>
           <article class="event-card listing__event-card">
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                <img src="assets/images/Sade.jpg" alt="Sade" class="event-card__img" />
               </picture>
 
               <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h4>
@@ -98,6 +101,25 @@
   <footer class="page-footer">
     footer
   </footer>
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+        <form class="pp__form form">
+          <!-- Содержимое формы -->
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

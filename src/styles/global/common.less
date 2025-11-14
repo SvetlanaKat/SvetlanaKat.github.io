@@ -13,21 +13,50 @@ body {
   min-height: 100vh;
   min-width: 680px;
   padding-top: 147px;
+  background-color: #dedede;
+  background-image: url(.../assets/images/noise.png);
+  background-position: 0 0, 0 0;
+  background-size: auto 100% auto;
+  background-repeat: repeat, repeat-y;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.375;
   color: #1f1e1e;
   font-style: normal;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .main {
   flex: 1 0 auto;
-  background-color: rgba(255, 255, 255, 0.6);
+  // background-color: rgba(255, 255, 255, 0.6);
 }
 
 .page-footer {
   flex: 0 0 auto;
-  background-color: blue;
-  height: 455px;
+  // background-color: blue;
+  // height: 455px;
+}
+
+.a {
+  color: #1f1e1e;
+  outline: none;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+  font-family: @font1;
+}
+textarea {
+  resize: none;
 }
