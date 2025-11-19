@@ -60,3 +60,17 @@ select {
 textarea {
   resize: none;
 }
+
+input,
+textarea {
+  &::placeholder {
+    color: @gray;
+  }
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent;
+  }
+}

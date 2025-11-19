@@ -16,7 +16,7 @@
     <div class="page-header__container">
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-icon" width="202px height=147">
-          <use xlink:href="assets/icons/symbols.svg#logo">
+          <use xlink:href="assets/icons/logo.svg">
         </svg>
       </a>
 
@@ -106,7 +106,7 @@
       <div class="pp__sticky-close">
         <button class="pp__x-btn x-btn">
           <svg class="x-btn__icon" width="12" height="12">
-            <use xlink:href="assets/icons/symbols.svg#x"></use>
+            <use xlink:href="assets/icons/x.svg"></use>
           </svg>
         </button>
       </div>
@@ -115,7 +115,16 @@
           <br />и мы подберем площадку
         </h2>
         <form class="pp__form form">
-          <!-- Содержимое формы -->
+          <label class="field">
+            <span class="field__label">Имя*</span>
+            <input class="field__input" type="text" placeholder="Имя" name="name" />
+          </label>
+
+          <label class="field">
+            <span class="field__title">Есть пожелания? Напишите нам:</span>
+            <textarea class="field__textarea" name="Пожелания"></textarea>
+
+          </label>
         </form>
       </div>
     </div>
