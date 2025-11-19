@@ -1,11 +1,11 @@
 .table {
   width: 100%;
   border-collapse: collapse;
-  color: #1F1E1E;
+  color: @black;
   text-align: center;
   &__tr {
     &:nth-child(2n-1) {
-      background-color: fade(#1F1E1E, 3%);
+      background-color: fade(@black, 3%);
     }
   }
   &__th {
@@ -66,7 +66,7 @@
   height: 26px;
   margin: auto;
   border-radius: 50%;
-  background-color: #1F1E1E;
+  background-color: @black;
   &::after {
     content: "";
     box-sizing: border-box;
@@ -76,8 +76,8 @@
     left: 9px;
     width: 8px;
     height: 14px;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid @white;
+    border-bottom: 2px solid @white;
     transform: rotate(45deg);
   }
 }
