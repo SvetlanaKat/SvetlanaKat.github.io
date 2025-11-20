@@ -470,6 +470,12 @@ textarea:focus::placeholder {
 }
 .form__submit--w50 {
   width: calc(50% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form__close-btn {
   margin: 0 auto;
