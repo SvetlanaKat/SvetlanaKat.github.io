@@ -512,6 +512,7 @@ textarea:focus::placeholder {
   padding-left: 24px;
   color: #1f1e1e;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .check__input {
   position: absolute !important;
@@ -580,6 +581,19 @@ textarea:focus::placeholder {
 .check__label--s {
   font-size: 14px;
   line-height: 19px;
+}
+.check--red {
+  color: #bc3324;
+}
+.check--red .check__mark {
+  border-color: #bc3324;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #bc3324;
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .radio {
   display: -webkit-box;
@@ -780,28 +794,69 @@ textarea:focus::placeholder {
   grid-template-areas: "checks scheme" "order legend";
   width: 100%;
 }
+.reserve__book {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 23px;
+  padding-left: 23px;
+}
 .reserve__checks {
   grid-area: checks;
-  background-color: yellow;
 }
 .reserve__scheme {
   grid-area: scheme;
-  background-color: #ffa200;
 }
 .reserve__order {
   grid-area: order;
-  background-color: #4c00ff;
 }
 .reserve__legend {
   grid-area: legend;
-  background-color: #ff0051;
 }
-.reserve .reserve > div {
+.reserve__reserve > div {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
   background-color: coral;
   text-align: center;
+}
+.reserve__tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.reserve__qty::after {
+  content: " " attr(data-caption) " | " attr(data-price);
+}
+.reserve__sum::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
+}
+.reserve__total::before {
+  content: attr(data-caption);
+  margin-right: 30px;
+}
+.reserve__total::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
 }
 .listing {
   -webkit-box-sizing: border-box;

@@ -9,6 +9,7 @@
   padding-left: 24px;
   color: @black;
   cursor: pointer;
+  margin-bottom: 10px;
 
    &__input {
     .is-hidden();
@@ -27,6 +28,7 @@
   }
 
   &__input {
+    
     .is-hidden();
     &:checked {
       & ~ .check__mark {
@@ -42,6 +44,7 @@
           border-bottom: 2px solid @white;
           border-right: 2px solid @white;
           transform: rotate(45deg);
+          
         }
       }
     }
@@ -56,5 +59,25 @@
       font-size: 14px;
       line-height: 19px;
     }
+  }
+
+  &--red {
+    color: @red;
+    .check__mark {
+      border-color: @red;
+    }
+
+    .check__input {
+      &:checked {
+        & ~ .check__mark {
+          background-color: @red;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
   }
 }

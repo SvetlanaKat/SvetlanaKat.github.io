@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="showe-event-popup">
+<html lang="ru">
 
 @@include('blocks/head.html')
 
@@ -12,18 +12,15 @@
     <article class="event">
 
     <form class="reserve event__reserve">
-      <div class="reserve__checks">
-        Чекбоксы
-      </div>
-      <div class="reserve__scheme">
-        Схема столов
-      </div>
-      <div class="reserve__order">
-        Оформление заказа
-      </div>
-      <div class="reserve__legend">
-        Легенда
-      </div>
+
+      @@include('blocks/reserve-checks.html')
+
+      @@include('blocks/reserve-scheme.html')
+
+      @@include('blocks/reserve-order.html')
+
+      @@include('blocks/reserve-legend.html')
+      
     </form>
    </article>
   
