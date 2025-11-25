@@ -1,13 +1,40 @@
 .table {
-  margin: auto;
-  width: 1334px;
-  height: 604px;
+  width: 100%;
   border-collapse: collapse;
   color: @black;
   text-align: center;
+  @media @bw768 {
+    display: block;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+  }
+
+  &__head,
+  &__body,
+  &__footer {
+     @media @bw768 {
+      display: block;
+     }
+
+  }
+
+  &__head-tr{
+     @media @bw768 {
+      display: flex;
+      width: 100%;
+     }
+  }
+
   &__tr {
+     @media @bw768 {
+      display: flex;
+      flex-wrap: wrap;
+     }
     &:nth-child(2n-1) {
       background-color: fade(@black, 3%);
+      @media @bw768 {
+        background-color: transparent;
+      }
     }
   }
   &__th {
@@ -15,10 +42,18 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
+     @media @bw768 {
+      font-size: 14px;
+      line-height: 19px;
+     }
   }
   &__footer-th {
     height: 60px;
     font-size: 0;
+    @media @bw768 {
+      font-size: 16px;
+      font-weight: 300;
+    }
   }
   &__th,
   &__footer-th {
@@ -26,8 +61,18 @@
     padding: 10px;
     border-right: 1px solid #BFBFBF;
     text-transform: uppercase;
+     @media @bw768 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 33.3333%;
+     }
     &:first-child {
       padding-left: 0;
+       @media @bw768 {
+        display: none;
+       }
     }
     &:last-child {
       border-right: none;
@@ -44,6 +89,12 @@
     font-size: 18px;
     line-height: 25px;
     text-align: left;
+     @media @bw768 {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+     }
   }
   &__td {
     box-sizing: border-box;
@@ -53,13 +104,26 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    @media @bw768 {
+      width: 33.3333%;
+     }
 
     &:last-child {
       border-right: none;
       padding-right: 0;
     }
+    &:nth-child(2n-1) {
+      @media @bw768 {
+        background-color: fade(@black, 3%);
+      }
+    }
   }
-}
+  &__footer-tr {
+   @media @bw768 {
+    display: flex;
+   }
+  }
+
 
 .ok {
   display: block;
@@ -82,4 +146,5 @@
     border-bottom: 2px solid @white;
     transform: rotate(45deg);
   }
+}
 }

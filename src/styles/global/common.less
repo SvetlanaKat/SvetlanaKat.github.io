@@ -21,10 +21,18 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.375;
-  color: #1f1e1e;
+  color: @black;
   font-style: normal;
   font-weight: 400;
   overflow-x: hidden;
+
+  @media @bw1660 {
+    padding-top: 111px;
+  }
+
+  @media @bw768 {
+    padding-top: 70px;
+  }
 }
 
 .main {
@@ -74,3 +82,4 @@ textarea:focus {
     color: transparent;
   }
 }
+
