@@ -11,14 +11,15 @@
     border: none;
     border-radius: 5px;
     background-color: @white;
-    font-size: 16px;
-    line-height: 1.375;
+    // font-size: 16px;
+    // line-height: 1.375;
     padding: 17px 20px 16px;
   }
   &__input,
   select {
     height: 55px;
-    padding: 0 20px;
+    margin-bottom: 20px;
+    // padding: 0 20px;
   }
   &__textarea {
     height: 150px;
@@ -26,16 +27,41 @@
   }
 
   &__label {
+    display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    color: @black;
 
   }
 
   &__title {
-    margin-bottom: 10px;
+    display: block;
+    margin: 0 0 10px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 25px;
+    // line-height: 25px;
+  }
+  &__date-inputs {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 55px;
+  }
+  &__date-input {
+    box-sizing: border-box;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: @white;
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 17px 13px 16px;
+    text-align: center;
+    &--year {
+      width: 110px;
+    }
   }
 }
 
