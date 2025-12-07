@@ -1,0 +1,75 @@
+.information {
+  box-sizing: border-box;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &__container {
+    .container();
+  }
+  
+  &__inform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 58px;
+    
+    justify-content: center;
+  }
+
+  &__square {
+    display: block;
+    justify-content: center;
+    position: relative;
+    z-index: 20;
+  }
+  &__symbol {
+display: block;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    color: #bc3324;
+  }
+
+  &__price,
+  &__contact,
+  &__handshake {
+    display: block;
+    justify-items: center;
+    width: 401px;
+    height: 253px;
+  }
+
+  &__title {
+    display: flex;
+    justify-items: center;
+    color: @black;
+    font-family: @font1;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__content {
+    display: flex;
+    text-align: center;
+    color: @black;
+    font-family: @font1;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+
+//   &__container {
+//     .container();
+//   }
+//   display: grid;
+//   gap: 65px 11%;
+//   grid-template-columns: 444,66px 1fr;
+//   grid-template-areas:
+//     "inform contact handshake";
+    
+//   justify-items: center;
+
+//   width: 100%;
+// }
