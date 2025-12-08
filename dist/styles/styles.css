@@ -919,21 +919,37 @@ textarea:focus::placeholder {
           justify-content: center;
 }
 .information__square {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 110px;
+  height: 110px;
+  background-color: #1f1e1e;
   position: relative;
-  z-index: 20;
+  z-index: 1;
 }
 .information__symbol {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  top: -30px;
-  right: -30px;
+  width: 24px;
+  height: 24px;
   color: #bc3324;
 }
 .information__price,
@@ -943,6 +959,19 @@ textarea:focus::placeholder {
   justify-items: center;
   width: 401px;
   height: 253px;
+}
+.information__use {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
 }
 .information__title {
   display: -webkit-box;

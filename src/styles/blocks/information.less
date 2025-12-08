@@ -18,17 +18,32 @@
   }
 
   &__square {
-    display: block;
-    justify-content: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 110px;
+  height: 110px;
+  
+  background-color: @black;
+
+    // display: block;
+    // justify-content: center;
     position: relative;
-    z-index: 20;
+    z-index: 1;
+
   }
   &__symbol {
-display: block;
+display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
-    top: -30px;
-    right: -30px;
+    width: 24px;
+    height: 24px;
+    // top: -30px;
+    // right: -30px;
     color: #bc3324;
   }
 
@@ -39,6 +54,14 @@ display: block;
     justify-items: center;
     width: 401px;
     height: 253px;
+  }
+
+  &__use {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 24px;
+height: 24px;
   }
 
   &__title {
