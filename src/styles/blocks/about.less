@@ -3,6 +3,12 @@
     .container();
   }
 
+  &__block1 {
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+
   &__block2{
   display: grid;
   grid-template-columns: 1fr 406px;
@@ -11,6 +17,11 @@
   "pic1 pic2"
   "title pic2"
   "text text";
+}
+
+&__block3 {
+  display: flex;
+  margin-top: 53px;
 }
 
 &__picture1 {
@@ -28,10 +39,57 @@
   grid-area: pic2;
   align-self: flex-end;
 }
-&__text {
+
+&__picture3 {
+  flex: 1;
+}
+
+&__text,
+&__text1 {
   grid-area: text;
   margin: 0 80px 0 auto;
   max-width: 870px;
   width: 100%;
 }
+
+&__text1 {
+  
+  margin-top: 50px;
+  margin-left: 467px;
+
+}
+
+&__text2 {
+  display: flex;
+  flex: 1;
+margin-left: 62px;
+align-items: center;
+justify-items: center;
+}
+
+&__link {
+flex: 1;
+margin-right: 230px;
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: @black;
+  // display: flex;
+  // align-items: center;
+  
+}
+
+&__arrow {
+    // display: flex;
+    justify-items: center;
+  position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 450px;
+    // color: inherit;
+    // transition: none;
+   
+}
+
 }

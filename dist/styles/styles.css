@@ -854,11 +854,22 @@ textarea:focus::placeholder {
   z-index: 1;
   position: relative;
 }
+.about__block1 {
+  display: block;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
 .about__block2 {
   display: grid;
   grid-template-columns: 1fr 406px;
   gap: 90px 60px;
   grid-template-areas: "pic1 pic2" "title pic2" "text text";
+}
+.about__block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 53px;
 }
 .about__picture1 {
   grid-area: pic1;
@@ -873,11 +884,52 @@ textarea:focus::placeholder {
   grid-area: pic2;
   align-self: flex-end;
 }
-.about__text {
+.about__picture3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.about__text,
+.about__text1 {
   grid-area: text;
   margin: 0 80px 0 auto;
   max-width: 870px;
   width: 100%;
+}
+.about__text1 {
+  margin-top: 50px;
+  margin-left: 467px;
+}
+.about__text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 62px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.about__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 230px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1e1e;
+}
+.about__arrow {
+  justify-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: 450px;
 }
 .information {
   -webkit-box-sizing: border-box;
