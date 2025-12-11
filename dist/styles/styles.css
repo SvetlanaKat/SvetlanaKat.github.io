@@ -1944,6 +1944,20 @@ textarea:focus::placeholder {
   color: #1f1e1e;
   text-align: center;
 }
+.table__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
 .table__tr:nth-child(2n-1) {
   background-color: rgba(31, 30, 30, 0.03);
 }
@@ -2408,6 +2422,10 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .table__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .width_624 {
     max-width: 566px;
   }
@@ -2626,6 +2644,10 @@ textarea:focus::placeholder {
     padding-right: 20px;
   }
   .offers__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .table__container {
     padding-left: 20px;
     padding-right: 20px;
   }
