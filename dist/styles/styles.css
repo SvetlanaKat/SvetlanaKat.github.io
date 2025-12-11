@@ -1335,6 +1335,10 @@ textarea:focus::placeholder {
   width: 135px;
   height: 49px;
 }
+.page-footer__feature {
+  text-align: center;
+  margin-bottom: 60px;
+}
 .reserve {
   display: grid;
   gap: 65px 11%;
