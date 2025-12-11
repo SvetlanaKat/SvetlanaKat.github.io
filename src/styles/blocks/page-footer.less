@@ -31,6 +31,8 @@
       bottom: 0;
       width: 4px;
       background-color: @red;
+       width: 4px;
+      height: 198px;
     }
   }
 
@@ -82,6 +84,30 @@
   &__feature {
     text-align: center;
     margin-bottom: 60px;
+  }
+
+  &__signature {
+     display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px 1fr;
+  // grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas:
+    "confident internet logo"
+  }
+
+  &__confident {
+    grid-area: confident;
+    background-color: yellow;
+  }
+
+  &__internet {
+    grid-area: internet;
+    background-color: red;
+  }
+
+  &__logo {
+    grid-area: logo;
+    background-color: blue;
   }
 
 }

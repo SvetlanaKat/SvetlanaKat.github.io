@@ -1283,8 +1283,9 @@ textarea:focus::placeholder {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 4px;
   background-color: #bc3324;
+  width: 4px;
+  height: 198px;
 }
 .page-footer__nav-link {
   display: -webkit-box;
@@ -1338,6 +1339,24 @@ textarea:focus::placeholder {
 .page-footer__feature {
   text-align: center;
   margin-bottom: 60px;
+}
+.page-footer__signature {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px 1fr;
+  grid-template-areas: "confident internet logo";
+}
+.page-footer__confident {
+  grid-area: confident;
+  background-color: yellow;
+}
+.page-footer__internet {
+  grid-area: internet;
+  background-color: red;
+}
+.page-footer__logo {
+  grid-area: logo;
+  background-color: blue;
 }
 .reserve {
   display: grid;
