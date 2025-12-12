@@ -1265,6 +1265,7 @@ textarea:focus::placeholder {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 0;
 }
 .page-footer__letter {
   -webkit-box-flex: 1;
@@ -1275,6 +1276,10 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.page-footer__nav {
+  padding: 0 0 0 20px;
+  position: relative;
 }
 .page-footer__nav::before {
   content: "";
@@ -1340,23 +1345,56 @@ textarea:focus::placeholder {
   text-align: center;
   margin-bottom: 60px;
 }
+.page-footer__Millennials {
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #1f1e1e;
+}
 .page-footer__signature {
+  position: relative;
+  margin-bottom: 73px;
   display: grid;
-  gap: 65px 11%;
-  grid-template-columns: 405px 1fr;
-  grid-template-areas: "confident internet logo";
+  gap: 22px 5px;
+  grid-template-columns: 323px 265px 102px 344px 212px 80px 1fr;
+  grid-template-areas: "confident Cookies insta vk promotion logotip";
 }
 .page-footer__confident {
   grid-area: confident;
-  background-color: yellow;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #1f1e1e;
 }
-.page-footer__internet {
-  grid-area: internet;
-  background-color: red;
+.page-footer__Cookies {
+  grid-area: Cookies;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #1f1e1e;
 }
-.page-footer__logo {
-  grid-area: logo;
-  background-color: blue;
+.page-footer__insta {
+  grid-area: insta;
+  position: absolute;
+  top: -10px;
+}
+.page-footer__vk {
+  grid-area: vk;
+  position: absolute;
+  top: -10px;
+}
+.page-footer__promotion {
+  grid-area: promotion;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #1f1e1e;
+}
+.page-footer__logotip {
+  grid-area: logotip;
+  position: absolute;
+  top: 10px;
 }
 .reserve {
   display: grid;

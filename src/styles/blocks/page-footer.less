@@ -1,6 +1,7 @@
 .page-footer {
-  
+
   &__container {
+
     .container();
   }
 
@@ -10,6 +11,7 @@
 
   &__structure {
     flex: 1;
+    margin: 0;
   }
 
   &__letter {
@@ -22,7 +24,10 @@
   }
 
   &__nav {
-     &::before {
+    padding: 0 0 0 20px;
+    position: relative;
+
+    &::before {
       content: "";
       display: block;
       position: absolute;
@@ -31,7 +36,7 @@
       bottom: 0;
       width: 4px;
       background-color: @red;
-       width: 4px;
+      width: 4px;
       height: 198px;
     }
   }
@@ -39,7 +44,7 @@
   &__nav-link {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
     color: @black;
@@ -47,7 +52,8 @@
     font-family: @font1;
     text-decoration: none;
     transition: color 0.2s;
-  &:hover {
+
+    &:hover {
       color: @red_dark;
     }
   }
@@ -55,6 +61,7 @@
   &__check {
     display: block;
   }
+
   &__title {
     margin-bottom: 14px;
     font-size: 16px;
@@ -72,7 +79,7 @@
   &__label {
     flex: 1;
     width: 270px;
-      height: 64px;
+    height: 64px;
   }
 
   &__btn {
@@ -86,28 +93,71 @@
     margin-bottom: 60px;
   }
 
+  &__Millennials {
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: @font1;
+    color: @black;
+  }
+
   &__signature {
-     display: grid;
-  gap: 65px 11%;
-  grid-template-columns: 405px 1fr;
-  // grid-template-columns: 405px calc(89% - 405px);
-  grid-template-areas:
-    "confident internet logo"
+    position: relative;
+    margin-bottom: 73px;
+    display: grid;
+    gap: 22px 5px;
+    grid-template-columns: 323px 265px 102px 344px 212px 80px 1fr;
+    // grid-template-columns: 405px calc(89% - 405px);
+    grid-template-areas:
+      "confident Cookies insta vk promotion logotip";
   }
 
   &__confident {
     grid-area: confident;
-    background-color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: @font1;
+    color: @black;
+    // background-color: green;
   }
 
-  &__internet {
-    grid-area: internet;
-    background-color: red;
+  &__Cookies {
+    grid-area: Cookies;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: @font1;
+    color: @black;
+    // background-color: green;
   }
 
-  &__logo {
-    grid-area: logo;
-    background-color: blue;
+  &__insta {
+    grid-area: insta;
+    position: absolute;
+    top: -10px;
+    // background-color: red;
+  }
+
+  &__vk {
+    grid-area: vk;
+    position: absolute;
+    top: -10px;
+    // background-color: red;
+  }
+
+  &__promotion {
+    grid-area: promotion;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: @font1;
+    color: @black;
+    // background-color: red;
+  }
+
+  &__logotip {
+    grid-area: logotip;
+    position: absolute;
+    top: 10px;
+    // background-color: blue;
   }
 
 }
