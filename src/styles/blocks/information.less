@@ -1,49 +1,44 @@
 .information {
   box-sizing: border-box;
-  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   &__container {
     .container();
   }
-  
+
   &__inform {
     display: flex;
     flex-wrap: wrap;
     gap: 120px 58px;
-    
+
     justify-content: center;
   }
 
   &__square {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  border: none;
-  padding: 0;
-  width: 110px;
-  height: 110px;
-  
-  background-color: @black;
-
-    // display: block;
-    // justify-content: center;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+    background-color: @black;
     position: relative;
     z-index: 1;
 
   }
+
   &__symbol {
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     width: 24px;
     height: 24px;
-    // top: -30px;
-    // right: -30px;
+    transform: translateX(40px) translateY(40px);
     color: #bc3324;
   }
 
@@ -60,8 +55,8 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-width: 24px;
-height: 24px;
+    width: 24px;
+    height: 24px;
   }
 
   &__title {
@@ -72,6 +67,7 @@ height: 24px;
     font-size: 20px;
     font-weight: 600;
   }
+
   &__content {
     display: flex;
     text-align: center;
@@ -91,7 +87,7 @@ height: 24px;
 //   grid-template-columns: 444,66px 1fr;
 //   grid-template-areas:
 //     "inform contact handshake";
-    
+
 //   justify-items: center;
 
 //   width: 100%;

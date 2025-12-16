@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   // background-color: #dedede80;
+//  background-color: rgba(222, 222, 222, 0.5);
   // backdrop-filter: blur(20px);
   z-index: 100;
   @media @bw1660 {
@@ -35,6 +36,8 @@
   &__container {
     display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
     .container();
   }
 
@@ -223,6 +226,8 @@
       height: 2px;
       border-radius: 2px;
       background-color: @black;
+      transform-origin: 50% 50%;
+      transition: transform 0.4s, box-shadow 0.4s;
     }
     &::before {
       top: 13px;

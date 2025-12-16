@@ -180,6 +180,26 @@ textarea:focus::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.show-nav .page-header__nav-toggle::before {
+  -webkit-transform: translate(0px, 6px) rotate(45deg);
+      -ms-transform: translate(0px, 6px) rotate(45deg);
+          transform: translate(0px, 6px) rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.show-nav .page-header__nav-toggle::after {
+  -webkit-transform: translate(0px, -6px) rotate(-45deg);
+      -ms-transform: translate(0px, -6px) rotate(-45deg);
+          transform: translate(0px, -6px) rotate(-45deg);
+}
+.show-event-popup body {
+  overflow: hidden;
+}
+.show-event-popup #js-eventPP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .section-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,6 +911,8 @@ textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   margin-top: 53px;
+  grid-template-columns: 928px 406px 1fr;
+  gap: 22px 60px;
 }
 .about__picture1 {
   grid-area: pic1;
@@ -909,6 +931,20 @@ textarea:focus::placeholder {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 928px;
+  display: grid;
+  grid-template-areas: "quadri img";
+}
+.about__quadri {
+  grid-area: quadri;
+  position: absolute;
+  background-color: #bc3324;
+}
+.about__img {
+  grid-area: pic3;
+  top: 18px;
+  left: 48px;
+  position: relative;
 }
 .about__text,
 .about__text1 {
@@ -934,23 +970,26 @@ textarea:focus::placeholder {
           align-items: center;
   justify-items: center;
 }
+.about__arrow {
+  position: relative;
+  top: -70px;
+  left: 995px;
+  display: grid;
+  gap: 22px 5px;
+  grid-template-columns: 253px 91px 1fr;
+  grid-template-areas: "link icon";
+}
 .about__link {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 230px;
-  margin-bottom: 40px;
-  font-weight: 600;
+  grid-area: link;
+  align-self: center;
   font-size: 16px;
-  line-height: 22px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   color: #1f1e1e;
 }
-.about__arrow {
-  justify-items: center;
+.about__icon {
+  grid-area: icon;
   position: absolute;
-  right: 0;
-  bottom: 30px;
-  width: 450px;
 }
 .information {
   -webkit-box-sizing: border-box;
@@ -1023,6 +1062,9 @@ textarea:focus::placeholder {
   position: absolute;
   width: 24px;
   height: 24px;
+  -webkit-transform: translateX(40px) translateY(40px);
+      -ms-transform: translateX(40px) translateY(40px);
+          transform: translateX(40px) translateY(40px);
   color: #bc3324;
 }
 .information__price,
@@ -1233,6 +1275,13 @@ textarea:focus::placeholder {
   height: 2px;
   border-radius: 2px;
   background-color: #1f1e1e;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
 }
 .page-header__nav-toggle::before {
   top: 13px;
@@ -1789,6 +1838,9 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateX(40px) translateY(40px);
+      -ms-transform: translateX(40px) translateY(40px);
+          transform: translateX(40px) translateY(40px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1932,7 +1984,8 @@ textarea:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1920px;
+  width: 1518px;
+  height: 257px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2475,6 +2528,16 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .main-header__Lenni {
+    width: 974px;
+    height: 165px;
+  }
+  .main-header__heading {
+    font-size: 35px;
+  }
+  .main-header__paragraph {
+    font-size: 35px;
+  }
   .offers__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2522,6 +2585,14 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1019px) {
+  .show-nav body {
+    overflow: hidden;
+  }
+  .show-nav .page-header__nav {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
   .event-card__description {
     font-size: 14px;
     line-height: 19px;
@@ -2699,6 +2770,16 @@ textarea:focus::placeholder {
   .main-header__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .main-header__Lenni {
+    width: 437px;
+    height: 74px;
+  }
+  .main-header__heading {
+    font-size: 30px;
+  }
+  .main-header__paragraph {
+    font-size: 30px;
   }
   .offers__container {
     padding-left: 20px;
