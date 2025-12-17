@@ -17,11 +17,27 @@
     font-weight: 500;
   }
 
+  &__picture {
+    display: flex;
+  justify-content: center;
+  }
+
   &__Sade {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 80px 702px 80px 712px ;
-
+  width: 506px;
+  height: 532px;
+  // align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  // padding: 80px 702px 80px 712px ;
+ @media @bw1340 {
+  width: 426px;
+height: 456px;
+ }
+ @media @bw768 {
+  width: 245px;
+height: 262px;
+ }
 }
 }

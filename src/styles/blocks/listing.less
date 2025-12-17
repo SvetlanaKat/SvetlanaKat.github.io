@@ -2,12 +2,14 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  
   .container();
 
   &__events-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 120px 58px;
+    gap: 115px 58px;
+    
 
     @media @bw1660 {
       justify-content: center;
@@ -37,7 +39,7 @@
 
   &__event-card {
     width: calc(33.3333% - 38.666px);
-
+ 
     &:nth-child(3n) {
       margin-right: 0;
     }

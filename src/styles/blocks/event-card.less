@@ -4,6 +4,7 @@
   max-width: 100%;
   min-width: 280px;
   color: @black;
+  
 
   &__link {
     display: flex;
@@ -28,6 +29,9 @@
     text-decoration: none;
     overflow: hidden;
     width: 100%;
+    @media @bw1660 {
+      margin-bottom: 0 0 20px;
+    }
 
     &::after {
       content: "";
@@ -80,6 +84,10 @@
     line-height: 22px;
 
     @media @bw1020 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+     @media @bw768 {
       font-size: 14px;
       line-height: 19px;
     }

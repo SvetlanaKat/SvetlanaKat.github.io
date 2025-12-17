@@ -7,15 +7,16 @@
     "checks scheme"
     "order legend";
   width: 100%;
+  margin-bottom: 150px;
 
   @media @bw1340 {
     gap: 65px 6.5%;
-    grid-template-columns: 340px calc(93.5% - 340px);
+    grid-template-columns: 340px 1fr;
   }
 
   @media @bw1020 {
     gap: 60px;
-    grid-template-columns: auto 390px;
+    grid-template-columns: 1fr 390px;
     grid-template-areas:
       "scheme scheme"
       "checks legend"
@@ -51,6 +52,9 @@
 
   &__checks {
     grid-area: checks;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     // background-color: yellow;
   }
 
@@ -61,6 +65,7 @@
 
   &__scheme {
     grid-area: scheme;
+    
     // background-color: rgb(255, 162, 0);
   }
 
@@ -268,6 +273,8 @@ display: flex;
   &__submit {
     align-items: flex-start;
     display: block;
+    
+    
     margin-top: 0;
     width: 405px;
     height: 52px;

@@ -1,11 +1,12 @@
 .section-title {
-  box-sizing: border-box;
+  .width_624();
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 150px;
-  width: 100%;
-  max-width: 624px;
+  
+  min-height: 62px;
   padding: 7px 45px 9px;
   background-color: @black;
   color: @white;
@@ -15,7 +16,7 @@
   line-height: 1.28;
   text-align: center;
   text-transform: uppercase;
-  .width_624;
+  
 
   @media @bw1660 {
     margin-bottom: 130px;
@@ -38,4 +39,5 @@
   @media @bw600 {
     font-size: 16px;
   }
+
 }

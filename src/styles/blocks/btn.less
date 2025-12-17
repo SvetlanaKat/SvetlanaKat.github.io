@@ -17,6 +17,21 @@
   overflow: hidden;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  @media @bw1340 {
+    margin-right: 47px;
+  margin-left: 47px;
+  }
+  @media @bw768 {
+    margin-right: 28px;
+  margin-left: 28px;
+  }
+  @media @bw650 {
+ width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  justify-content: center;
+  margin-bottom: 25px;
+  }
 
   &:hover {
     background-color: @black;
@@ -37,5 +52,11 @@
     background-color: @black;
     border-color: @black;
     color: @white;
+  }
+
+  &--white {
+    @media @bw650 {
+    order: -1;
+    }
   }
 }

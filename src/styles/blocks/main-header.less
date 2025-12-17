@@ -20,8 +20,8 @@
   box-sizing: border-box;
   display: block;
   align-items: center;
-  width: 1518px;
-  height: 257px;
+  width: 1920px;
+  height: 325px;
   flex-direction: column;
   position: relative;
   margin: 0 0 25px;
@@ -29,13 +29,20 @@
   text-decoration: none;
   overflow: hidden;
   margin: auto;
-   @media @bw1340 {
-      width: 974px;
-      height: 165px;
+  @media @bw1660 {
+    overflow: hidden;
+      width: 100%;
+      height: auto;
     }
-    @media @bw768 {
-      width: 437px;
-      height: 74px;
+   @media @bw1340 {
+    overflow: hidden;
+      width: 100%;
+      height: auto;
+    }
+    @media @bw768 {  
+      overflow: hidden;
+      width: 100%;
+      height: auto;
     }
 }
 
