@@ -1,5 +1,5 @@
 .events {
-  padding: 140px 100px;
+  padding: 140px 0 100px;
 //  position: relative;
 //      background-image: url("src/assets/images/rectangle.png");
 //     background-position: 0 0, 0 0;
@@ -21,12 +21,38 @@
   &__paragraph {
     position: relative;
     display: flex;
+    margin-bottom: 60px;
     width: 868px;
     color: @black;
     text-decoration: none;
     font-family: @font1;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
+    
+
+  @media @bw1340 {
+    width: 829px;
+  }
+
+  @media @bw1020 {
+   width: 707px;
+  }
+
+  @media @bw960 {
+   width: 500px;
+  }
+
+  @media @bw768 {
+    width: 400px;
+  }
+
+  @media @bw600 {
+    width: 300px;
+  }
+
+  @media @bw400 {
+    width: 208px;
+  }
   }
 
 }

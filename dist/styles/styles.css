@@ -224,6 +224,11 @@ textarea:focus::placeholder {
   text-align: center;
   text-transform: uppercase;
 }
+.section-title__dop {
+  font-weight: 400;
+  font-size: 22px;
+  padding: none;
+}
 .event-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,7 +946,8 @@ textarea:focus::placeholder {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 928px;
+  width: 100%;
+  max-width: 928px;
   display: grid;
   grid-template-areas: "quadri img";
 }
@@ -2068,7 +2074,7 @@ textarea:focus::placeholder {
   position: relative;
 }
 .events {
-  padding: 140px 100px;
+  padding: 140px 0 100px;
 }
 .events__container {
   -webkit-box-sizing: border-box;
@@ -2092,11 +2098,12 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 60px;
   width: 868px;
   color: #1f1e1e;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
 }
 .main-header__container {
@@ -2165,7 +2172,6 @@ textarea:focus::placeholder {
   grid-area: text;
   text-align: center;
   width: 100%;
-  height: 58px;
   font-weight: 400;
   font-size: 45px;
   font-family: "Lora", serif;
@@ -2706,6 +2712,9 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .events__paragraph {
+    width: 829px;
+  }
   .main-header__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2875,6 +2884,9 @@ textarea:focus::placeholder {
     max-width: 405px;
     margin: 0 15px 80px;
   }
+  .events__paragraph {
+    width: 707px;
+  }
   .show-nav body {
     overflow: hidden;
   }
@@ -2882,6 +2894,11 @@ textarea:focus::placeholder {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+@media (max-width: 959px) {
+  .events__paragraph {
+    width: 500px;
   }
 }
 @media (max-width: 767px) {
@@ -2969,6 +2986,9 @@ textarea:focus::placeholder {
   .events__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .events__paragraph {
+    width: 400px;
   }
   .main-header__container {
     padding-left: 20px;
@@ -3105,6 +3125,9 @@ textarea:focus::placeholder {
   .section-title {
     font-size: 16px;
   }
+  .events__paragraph {
+    width: 300px;
+  }
   .content blockquote {
     width: 282px;
   }
@@ -3133,5 +3156,10 @@ textarea:focus::placeholder {
   .article-card__description {
     font-size: 14px;
     line-height: 19px;
+  }
+}
+@media (max-width: 399px) {
+  .events__paragraph {
+    width: 208px;
   }
 }
