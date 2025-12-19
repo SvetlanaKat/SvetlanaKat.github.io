@@ -8,32 +8,29 @@
 
     <div class="page-footer__inform">
       <div class="page-footer__structure">
-        <nav class="page-footer__nav">
+        <div class="page-footer__nav">
           <a class="page-footer__nav-link" href="#">Календарь мероприятий</a>
           <a class="page-footer__nav-link" href="#">Провести мероприятие</a>
           <a class="page-footer__nav-link" href="#">Стать арендатором</a>
           <a class="page-footer__nav-link" href="#">Наши пректы</a>
           <a class="page-footer__nav-link" href="#">Контакты</a>
-        </nav>
+        </div>
       </div>
 
-      <div class="page-footer__letter">
+      <form class="page-footer__letter">
         <h2 class="page-footer__title">Подпишись и будь в курсе происходящего</h2>
-        <div class="page-footer__script">
-          <div class="page-footer__label">
+          <div class="page-footer__input">
             <label class="field form__field form__field--page-footer">
               <!-- <span class="field__label"></span> -->
               <input class="field__input--footer" type="email" placeholder="Email" name="email" required />
-            </label>
-          </div>
-          <div class="page-footer__btn">
-            <button type="submit" class="btn btn--black footer__submit">
+          </label>
+        
+            <button type="submit" class="btn btn--black page-footer__submit">
               Подписаться
             </button>
           </div>
-        </div>
-
-        <div class="page-footer_check">
+        
+         
           <label class="check">
             <input type="checkbox" name="agree" class="check__input" required checked />
             <span class="check__mark"></span>
@@ -41,27 +38,33 @@
               Я соглашаюсь на обработку персональных данных
             </span>
           </label>
-        </div>
-      </div>
+      </form>
     </div>
+
     <p class="page-footer__Millennials">© Millennials 2025</p>
 
     <div class="page-footer__signature">
-      <p class="page-footer__confident">Политика конфиденциальности</p>
-      <p class="page-footer__Cookies">Cookies</p>
-      <!-- <p class="page-footer__insta">insta</p> -->
-       <svg class="page-footer__insta" width="58" height="58">
+      <a class="page-footer__confident" href="confident">Политика конфиденциальности</a>
+      <a class="page-footer__Cookies" href="Cookies">Cookies</a>
+      
+       <a class="page-footer__net" href="net">
+        <svg class="page-footer__insta" width="58" height="58">
           <use xlink:href="assets/icons/insta.svg"></use>
       </svg>
-      <!-- <p class="page-footer__vk">vk</p> -->
-       <svg class="page-footer__vk" width="58" height="58">
+       </a>
+      <a class="page-footer__net" href="net">
+        <svg class="page-footer__vk" width="58" height="58">
           <use xlink:href="assets/icons/vk.svg"></use>
         </svg>
-      <p class="page-footer__promotion">Создание и продвижение</p>
-      <svg class="page-footer__logotip" width="80" height="35">
+      </a>
+       
+      <a class="page-footer__promotion" href="promotion">Создание и продвижение</a>
+      <a class="page-footer__net" href="net">
+        <svg class="page-footer__logotip" width="80" height="35">
           <use xlink:href="assets/icons/logotip.svg"></use>
         </svg>
-      <!-- <p class="page-footer__logo">logo</p> -->
+      </a>
+      
     </div>
   </div>
 

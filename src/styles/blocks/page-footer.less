@@ -15,7 +15,9 @@
   }
 
   &__letter {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
     // display: flex;
   }
 
@@ -64,6 +66,7 @@
 
   &__title {
     margin-bottom: 14px;
+    margin-top: 0;
     font-size: 16px;
     font-weight: 600;
     font-family: @font1;
@@ -72,8 +75,17 @@
   }
 
   &__submit {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     width: 135px;
     height: 49px;
+    font-weight: 400;
+  font-size: 14px;
+  font-family: @font1;
+  padding: 15px 23px;
+  z-index: 1;
+  
   }
 
   &__label {
@@ -94,6 +106,7 @@
   }
 
   &__Millennials {
+    
     margin-top: 60px;
     font-size: 16px;
     font-weight: 400;
@@ -118,6 +131,9 @@
     font-weight: 600;
     font-family: @font1;
     color: @black;
+    text-decoration: none;
+    display: inline-flex;
+    height: 0;
     // background-color: green;
   }
 
@@ -127,20 +143,27 @@
     font-weight: 600;
     font-family: @font1;
     color: @black;
+    text-decoration: none;
+    display: inline-flex;
+    height: 0;
     // background-color: green;
   }
 
   &__insta {
     grid-area: insta;
     position: absolute;
-    top: -10px;
+    top: -40px;
+    display: inline-flex;
+    
     // background-color: red;
   }
 
   &__vk {
     grid-area: vk;
     position: absolute;
-    top: -10px;
+    top: -40px;
+    display: inline-flex;
+    
     // background-color: red;
   }
 
@@ -150,14 +173,23 @@
     font-weight: 600;
     font-family: @font1;
     color: @black;
+    text-decoration: none;
+    display: inline-flex;
+    height: 0;
     // background-color: red;
   }
 
   &__logotip {
     grid-area: logotip;
     position: absolute;
-    top: 10px;
+    top: -5px;
+    color: @black;
+    display: inline-flex;
+    
     // background-color: blue;
+  }
+  &__input {
+    flex-direction: row;
   }
 
 }

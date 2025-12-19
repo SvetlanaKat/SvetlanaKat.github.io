@@ -119,15 +119,15 @@
             <p class="about__text2">
               Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.
             </p>
-
-
-
           </div>
+
           <div class="about__arrow arrow">
-            <a href="#" class="about__link">Смотреть</a>
-            <svg class="arrow__icon" width="91" height="60">
-              <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-            </svg>
+            <a href="#" class="about__link">
+              <span class="about__span">Смотреть</span>
+              <svg class="arrow__icon" width="91" height="60">
+                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -363,9 +363,8 @@
               </svg>
               <div class="contacts__blok">
                 <h3 class="contacts__title">Отдел аренды </h3>
-                <p class="contacts__content">8 (3822) 90-72-56
-                  <br>idat@tusur.ru
-                </p>
+                <a class="contacts__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
+                <a class="contacts__content" href="mailto:idat@tusur.ru">idat@tusur.ru</a>
               </div>
             </div>
 
@@ -377,9 +376,8 @@
               </svg>
               <div class="contacts__blok">
                 <h3 class="contacts__title">Отдел мероприятий </h3>
-                <p class="contacts__content">8 (3822) 90-72-56
-                  <br>idat@tusur.ru
-                </p>
+                <a class="contacts__content" href="tel:8 (3822) 90-72-56">8 (3822) 90-72-56</a>
+                <a class="contacts__content" href="mailto:idat@tusur.ru">idat@tusur.ru</a>
               </div>
             </div>
 
@@ -414,60 +412,63 @@
 
       <div class="page-footer__inform">
         <div class="page-footer__structure">
-          <nav class="page-footer__nav">
+          <div class="page-footer__nav">
             <a class="page-footer__nav-link" href="#">Календарь мероприятий</a>
             <a class="page-footer__nav-link" href="#">Провести мероприятие</a>
             <a class="page-footer__nav-link" href="#">Стать арендатором</a>
             <a class="page-footer__nav-link" href="#">Наши пректы</a>
             <a class="page-footer__nav-link" href="#">Контакты</a>
-          </nav>
+          </div>
         </div>
 
-        <div class="page-footer__letter">
+        <form class="page-footer__letter">
           <h2 class="page-footer__title">Подпишись и будь в курсе происходящего</h2>
-          <div class="page-footer__script">
-            <div class="page-footer__label">
-              <label class="field form__field form__field--page-footer">
-                <!-- <span class="field__label"></span> -->
-                <input class="field__input--footer" type="email" placeholder="Email" name="email" required />
-              </label>
-            </div>
-            <div class="page-footer__btn">
-              <button type="submit" class="btn btn--black footer__submit">
-                Подписаться
-              </button>
-            </div>
+          <div class="page-footer__input">
+            <label class="field form__field form__field--page-footer">
+              <!-- <span class="field__label"></span> -->
+              <input class="field__input--footer" type="email" placeholder="Email" name="email" required />
+            </label>
+
+            <button type="submit" class="btn btn--black page-footer__submit">
+              Подписаться
+            </button>
           </div>
 
-          <div class="page-footer_check">
-            <label class="check">
-              <input type="checkbox" name="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <span class="check__label check__label--s">
-                Я соглашаюсь на обработку персональных данных
-              </span>
-            </label>
-          </div>
-        </div>
+
+          <label class="check">
+            <input type="checkbox" name="agree" class="check__input" required checked />
+            <span class="check__mark"></span>
+            <span class="check__label check__label--s">
+              Я соглашаюсь на обработку персональных данных
+            </span>
+          </label>
+        </form>
       </div>
+
       <p class="page-footer__Millennials">© Millennials 2025</p>
 
       <div class="page-footer__signature">
-        <p class="page-footer__confident">Политика конфиденциальности</p>
-        <p class="page-footer__Cookies">Cookies</p>
-        <!-- <p class="page-footer__insta">insta</p> -->
-        <svg class="page-footer__insta" width="58" height="58">
-          <use xlink:href="assets/icons/insta.svg"></use>
-        </svg>
-        <!-- <p class="page-footer__vk">vk</p> -->
-        <svg class="page-footer__vk" width="58" height="58">
-          <use xlink:href="assets/icons/vk.svg"></use>
-        </svg>
-        <p class="page-footer__promotion">Создание и продвижение</p>
-        <svg class="page-footer__logotip" width="80" height="35">
-          <use xlink:href="assets/icons/logotip.svg"></use>
-        </svg>
-        <!-- <p class="page-footer__logo">logo</p> -->
+        <a class="page-footer__confident" href="confident">Политика конфиденциальности</a>
+        <a class="page-footer__Cookies" href="Cookies">Cookies</a>
+
+        <a class="page-footer__net" href="net">
+          <svg class="page-footer__insta" width="58" height="58">
+            <use xlink:href="assets/icons/insta.svg"></use>
+          </svg>
+        </a>
+        <a class="page-footer__net" href="net">
+          <svg class="page-footer__vk" width="58" height="58">
+            <use xlink:href="assets/icons/vk.svg"></use>
+          </svg>
+        </a>
+
+        <a class="page-footer__promotion" href="promotion">Создание и продвижение</a>
+        <a class="page-footer__net" href="net">
+          <svg class="page-footer__logotip" width="80" height="35">
+            <use xlink:href="assets/icons/logotip.svg"></use>
+          </svg>
+        </a>
+
       </div>
     </div>
 
