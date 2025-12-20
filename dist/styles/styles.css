@@ -791,9 +791,10 @@ textarea:focus::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   color: #1f1e1e;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 70px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 .article__picture {
   display: -webkit-box;
@@ -810,7 +811,8 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 506px;
+  width: 100%;
+  max-width: 506px;
   height: 532px;
   margin-top: 80px;
   margin-bottom: 80px;

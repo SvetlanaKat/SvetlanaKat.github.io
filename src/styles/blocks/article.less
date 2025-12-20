@@ -2,42 +2,51 @@
   padding: 40px 0 150px;
   display: flex;
   align-items: center;
+
   &__container {
     .container();
   }
+
   &__content {
     max-width: 830px;
+
   }
+
   &__title {
     display: flex;
     justify-content: center;
     color: @black;
-    font-family: @font1;
+    font-family: @font2;
     font-size: 70px;
     font-weight: 500;
+    margin-bottom: 0;
   }
 
   &__picture {
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
 
   &__Sade {
-  display: flex;
-  justify-content: center;
-  width: 506px;
-  height: 532px;
-  // align-items: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  // padding: 80px 702px 80px 712px ;
- @media @bw1340 {
-  width: 426px;
-height: 456px;
- }
- @media @bw768 {
-  width: 245px;
-height: 262px;
- }
-}
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 506px;
+    height: 532px;
+    // align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    // padding: 80px 702px 80px 712px ;
+    @media @bw1340 {
+      width: 426px;
+      height: 456px;
+    }
+
+    @media @bw768 {
+      width: 245px;
+      height: 262px;
+    }
+  }
+   
 }
