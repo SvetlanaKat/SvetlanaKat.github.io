@@ -2293,6 +2293,11 @@ textarea:focus::placeholder {
   background-color: #1f1e1e;
 }
 .listing__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   float: right;
   margin-top: 85px;
   font-size: 16px;
