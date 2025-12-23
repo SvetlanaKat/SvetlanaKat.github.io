@@ -15,79 +15,12 @@
       @@include('blocks/offers.html')
 
       @@include('blocks/about.html')
-
-      <!-- <section class="upcoming home__upcoming">
-       <h2 class="upcoming__section-title section-title">Мероприятия</h2>
-       <div class="upcoming__container"></div>
-     </section> -->
-
+        
       <div class="events">
-        <section class="listing events__listing">
-          <h2 class="listing__title section-title">Мероприятия</h2>
-
-          <div class="listing__events-list">
-            <!-- prettier-ignore -->
-
-            @@loop('blocks/event-card.html', [
-            {
-            "class": "listing__event-card",
-            "img": "assets/images/blog/nirvana.jpg",
-            "img_tablet": "assets/images/blog/nirvana_tablet.jpg",
-            "img_webp": "assets/images/blog/nirvana.webp",
-            "img_tablet_webp": "assets/images/blog/nirvana_tablet.webp",
-            "alt": "nirvana",
-            "title": "Собираемся и слушаем альбом Nirvana",
-            "descr": "Это третий альбом группы...",
-            "time": "07.12.2022 | начало 18.00",
-            "datetime": "2022-12-07T18:00"
-            },
-            {
-            "class": "listing__event-card",
-            "img": "assets/images/blog/Stuff.jpg",
-            "img_tablet": "assets/images/blog/Stuff_tablet.jpg",
-            "img_webp": "assets/images/blog/Stuff.webp",
-            "img_tablet_webp": "assets/images/blog/Stuff_tablet.webp",
-            "alt": "Stuff",
-            "title": "Есть тема, нужно обсудить с HowStuffWorks",
-            "descr": "Один из самых популярных подкастов в мире...",
-            "time": "14.12.2022 | начало 18.30",
-            "datetime": "2022-12-14T18:30"
-            },
-            {
-            "class": "listing__event-card",
-            "img": "assets/images/blog/Sade.jpg",
-            "img_tablet": "assets/images/blog/Sade_tablet.jpg",
-            "img_webp": "assets/images/blog/Sade.webp",
-            "img_tablet_webp": "assets/images/blog/Sade_tablet.webp",
-            "alt": "Sade",
-            "title": "Есть тема, нужно обсудить с HowStuffWorks",
-            "descr": "Один из самых популярных подкастов в мире...",
-            "time": "14.12.2022 | начало 18.30",
-            "datetime": "2022-12-14T18:30"
-            }
-            ])
-          </div>
-
-           <div class="listing__arrows">
-<div class="listing__arrow-left">
-        <svg class="arrow__icon-left" width="91" height="60">
-          <use xlink:href="assets/icons/arrow-left.svg"></use>
-        </svg>
+        @@include('blocks/upcoming.html', {"class": "home__upcoming"})
       </div>
-
-<div class="listing__arrow-centr">
-        <svg class="listing__icon-centr" width="15" height="2"></svg>
-      </div>
-
-      <div class="listing__arrow-right">
-        <svg class="arrow__icon" width="91" height="60">
-          <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-        </svg>
-      </div>
-  </div>
-          <a href="#" class="listing__link link">Смотреть все</a>
-        </section>
-      </div>
+      
+      
 
       <!-- prettier-ignore -->
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
@@ -104,7 +37,9 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key="></script>
 
+<script src="scripts/swiper.min.js"></script>
 
+<script src="scripts/main.min.js"></script>
 
 <script src="scripts/main.js" defer></script>
 

@@ -8,6 +8,34 @@ navToggle.addEventListener("click", function () {
   root.classList.toggle("show-nav");
 });
 
+
+var swipers = document.querySelectorAll(".js-swiper");
+
+swipers.forEach(function (swpr) {
+  new Swiper(swpr, {
+    updateOnWindowResize: true,
+    slidesPerView: "auto",
+    freeMode: true,
+    spaceBetween: 0,
+    speed: 500,
+    grabCursor: true,
+    pagination: {
+      el: swpr.querySelector(".swiper-pagination"),
+      clickable: true
+    },
+    navigation: {
+      nextEl: swpr.querySelector(".swiper-arrow-next"),
+      prevEl: swpr.querySelector(".swiper-arrow-prev"),
+      disabledClass: "arrow--disabled"
+    }
+  });
+});
+
+
+
+
+
+
 const eventPP = document.querySelector("#js-eventPP");
 
   if (eventPP) {
