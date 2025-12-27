@@ -1988,10 +1988,6 @@ textarea:focus::placeholder {
 .arrow:active {
   color: #bc3324;
 }
-.arrow__icon {
-  width: 100%;
-  height: 100%;
-}
 .arrow--left .arrow__icon {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
