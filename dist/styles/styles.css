@@ -2705,6 +2705,7 @@ textarea:focus::placeholder {
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .article__text--300 {
   display: -webkit-box;
@@ -2720,17 +2721,27 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateY(25px) translateX(12px);
-      -ms-transform: translateY(25px) translateX(12px);
-          transform: translateY(25px) translateX(12px);
+  -webkit-transform: translateY(13px) translateX(12px);
+      -ms-transform: translateY(13px) translateX(12px);
+          transform: translateY(13px) translateX(12px);
   font-size: 16px;
   font-weight: 700;
 }
 .article__text-bottom {
   text-align: right;
   margin-top: 11px;
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 700;
+}
+.article__feature {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.article__feature--180g {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .pp {
   -webkit-box-sizing: border-box;

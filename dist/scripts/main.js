@@ -313,7 +313,7 @@ const point = new google.maps.LatLng(56.49385, 84.96274);
 }
 
 
-const jsSelectric = $("#.js-selectric");
+const jsSelectric = $('.js-selectric');
 
 if (jsSelectric.length) {
   jsSelectric.selectric({
@@ -322,7 +322,7 @@ if (jsSelectric.length) {
 }
 
 
-const mobileMask = $('#.js-mobileMask');
+const mobileMask = $('.js-mobileMask');
 
 if (mobileMask.length) {
   mobileMask.mask('+7 (000) 000 00 00', { placeholder: "+7 (___) ___ __ __" });
