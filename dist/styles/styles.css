@@ -2260,6 +2260,7 @@ textarea:focus::placeholder {
 .field span.error {
   display: block;
   margin: 5px 0 0;
+  color: #bc3324;
 }
 .field__input,
 .field__textarea,
