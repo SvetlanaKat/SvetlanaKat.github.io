@@ -17,21 +17,19 @@
         </div>
       </div>
 
-      <form class="page-footer__letter" action="https://jsonplaceholder.typicode.com/posts" id="js-subscribeForm">
-        <h2 class="page-footer__title">Подпишись и будь в курсе происходящего</h2>
-          <div class="page-footer__input">
-            <label class="field form__field form__field--page-footer">
-              <!-- <span class="field__label"></span> -->
-              <input class="field__input--footer" type="email" placeholder="Email" name="email" required />
-          </label>
-        
-            <button type="submit" class="btn btn--black page-footer__submit">
+      <form class="page-footer__subscribe-form subscribe-form"  action="https://jsonplaceholder.typicode.com/posts" id="js-subscribeForm">
+        <h2 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h2>
+          <div class="subscribe-form__wrapper">
+            <div class="subscribe-form__field-wrapper">
+              <input class="subscribe-form__input" type="email" placeholder="Email" name="email" required id="js-subscribeEmail"/>
+          </div>
+              <button type="submit" class="subscribe-form__submit">
               Подписаться
             </button>
           </div>
         
          
-          <label class="check">
+          <label class="subscribe-form__check check">
             <input type="checkbox" name="agree" class="check__input" required checked />
             <span class="check__mark"></span>
             <span class="check__label check__label--s">

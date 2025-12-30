@@ -52,35 +52,35 @@ if (eventForm.length) {
 
 
 
-// const subscribeForm = $("#js-subscribeForm");
+const subscribeForm = $("#js-subscribeForm");
 
-// if (subscribeForm.length) {
+if (subscribeForm.length) {
 
-//   const subscribeAction = subscribeForm.attr("action");
-//   const subscribeEmail = subscribeForm.find("#js-subscribeEmail");
+  const subscribeAction = subscribeForm.attr("action");
+  const subscribeEmail = subscribeForm.find("#js-subscribeEmail");
 
-//   subscribeForm.validate({
-//     errorElement: "span",
-//     submitHandler: function (form, event) {
-//       event.preventDefault();
+  subscribeForm.validate({
+    errorElement: "span",
+    submitHandler: function (form, event) {
+      event.preventDefault();
 
-//       $.ajax({
-//         url: subscribeAction,
-//         method: "POST",
-//         data: {
-//           email: subscribeEmail.val()
-//         },
-//         success: function () {
-//           subscribeEmail.val("");
-//           subscribeEmail.blur();
-//           alert("Вы успешно подписались на рассылку новостей");
-//         },
-//         error: function () {
-//           alert("Что-то пошло не так, попробуйте еще раз");
-//         }
-//       });
-//     }
-//   });
-// }
+      $.ajax({
+        url: subscribeAction,
+        method: "POST",
+        data: {
+          email: subscribeEmail.val()
+        },
+        success: function () {
+          subscribeEmail.val("");
+          subscribeEmail.blur();
+          alert("Вы успешно подписались на рассылку новостей");
+        },
+        error: function () {
+          alert("Что-то пошло не так, попробуйте еще раз");
+        }
+      });
+    }
+  });
+}
         
 })();
