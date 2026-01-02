@@ -1,22 +1,14 @@
 .events {
   padding: 140px 0 100px;
-//  position: relative;
-//      background-image: url("src/assets/images/rectangle.png");
-//     background-position: 0 0, 0 0;
-//     background-size: 1920px 1236px;
-//     background-repeat: repeat, repeat-y;
-  &__container {
-    .container();
-  }
+}
 
+&__container {
+  .container();
+  
   &__listing {
+    display: block;
     margin-bottom: 100px;
-   
   }
-
-  // &__services {
-  //   .container();
-  // }
 
   &__paragraph {
     position: relative;
@@ -28,31 +20,47 @@
     font-family: @font1;
     font-weight: 400;
     font-size: 16px;
-    
 
-  @media @bw1340 {
-    width: 829px;
+
+    @media @bw1340 {
+      width: 829px;
+    }
+
+    @media @bw1020 {
+      width: 707px;
+    }
+
+    @media @bw960 {
+      width: 500px;
+    }
+
+    @media @bw768 {
+      width: 400px;
+    }
+
+    @media @bw600 {
+      width: 300px;
+    }
+
+    @media @bw400 {
+      width: 208px;
+    }
   }
 
-  @media @bw1020 {
-   width: 707px;
+  &__services {
+    margin-top: 100%;
   }
 
-  @media @bw960 {
-   width: 500px;
+  &__span {
+    display: flex;
+    align-items: center;
+    grid-area: span;
+    font-family: @font1;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: @black;
+    text-decoration: none;
+    transition: color 0.2s;
+   
   }
-
-  @media @bw768 {
-    width: 400px;
-  }
-
-  @media @bw600 {
-    width: 300px;
-  }
-
-  @media @bw400 {
-    width: 208px;
-  }
-  }
-
 }

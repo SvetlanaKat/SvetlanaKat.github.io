@@ -287,6 +287,7 @@
 
             <div class="reserve__tickets-list">
               <div class="reserve__tickets">
+
                 <div class="reserve__qty" data-caption="шт." data-currency="₽" data-price="1400 ₽">9</div>
                 <div class="reserve__sum" data-currency="₽">12600</div>
               </div>
@@ -298,7 +299,7 @@
             </div>
 
             <div class="reserve__total" data-caption="Сумма" data-currency="₽">17600</div>
-            <button type="submit" class="btn--red reserve__submit">
+            <button type="submit" class="btn btn--red reserve__submit">
               Купить билеты
             </button>
           </div>
@@ -309,7 +310,13 @@
 
             <div class="reserve__cost-list">
               <div class="reserve__cost">
+                <svg class="reserve__icon" width="24" height="24">
+                  <use xlink:href="assets/icons/rectangle_red.svg"></use>
+                </svg>
                 <div class="reserve__qty-right" data-caption="персона" data-price="1400 ₽">1</div>
+                <svg class="reserve__icon" width="24" height="24">
+                  <use xlink:href="assets/icons/rectangle_black.svg"></use>
+                </svg>
                 <div class="reserve__qty-right" data-caption="персона" data-price="1250 ₽">1</div>
               </div>
             </div>
@@ -317,9 +324,18 @@
             <h4 class="reserve__section-title-ps">Примечание</h4>
             <div class="reserve__tickets-list">
               <div class="reserve__tickets-right">
+                <svg class="reserve__icon--black" width="24" height="24">
+                  <use xlink:href="assets/icons/ellipse_black.svg"></use>
+                </svg>
+                <svg class="reserve__icon--red" width="24" height="24">
+                  <use xlink:href="assets/icons/ellipse_red.svg"></use>
+                </svg>
                 <div class="reserve__available">доступные места</div>
               </div>
               <div class="reserve__tickets-right">
+                <svg class="reserve__icon reserve__icon--gray" width="24" height="24">
+                  <use xlink:href="assets/icons/ellipse_gray.svg"></use>
+                </svg>
                 <div class="reserve__booked">забронировано</div>
               </div>
 

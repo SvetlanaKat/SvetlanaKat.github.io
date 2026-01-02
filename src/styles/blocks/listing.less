@@ -2,13 +2,14 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
+
   .container();
 
   &__events-list {
     display: flex;
     flex-wrap: wrap;
     gap: 115px 58px;
+   
     
 
     @media @bw1660 {
@@ -133,5 +134,18 @@
       color: @red;
       text-decoration-color: @red;
     }
+
+    &--centre {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      max-width: 1334px;
+      width: 100%;
+ 
+    }
   }
+
+ 
 }

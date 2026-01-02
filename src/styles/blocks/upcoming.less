@@ -1,16 +1,40 @@
 .upcoming {
   padding: 140px 0 100px;
-//  position: relative;
-//      background-image: url("src/assets/images/rectangle.png");
-//     background-position: 0 0, 0 0;
-//     background-size: 1920px 1236px;
-//     background-repeat: repeat, repeat-y;
+
   &__container {
     .container();
   }
 
   &__listing {
     margin-bottom: 100px;
+  }
+
+  &__img {
+    position: absolute;
+  }
+
+  &__wrapper {
    
+    display: flex;
+      position: relative;
+  overflow: hidden;
+
+   &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+    max-width: 1922px;
+    width: 100%;
+    height: 100%;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    transform: translate(-50%, -50%);
+  }
   }
 }
