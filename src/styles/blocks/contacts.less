@@ -1,6 +1,5 @@
 .contacts {
   box-sizing: border-box;
-  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +7,20 @@
   &__container {
     display: flex;
     .container();
+
+    @media @bw1170 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 100px 0;
+      grid-template-areas:
+        "square-map"
+        "inform";
+      justify-items: center;
+    }
   }
 
   &__inform {
-    // display: flex;
     flex: 1;
-    // flex-wrap: wrap;
-    // gap: 120px 58px;
     justify-content: center;
     box-sizing: border-box;
     position: relative;
@@ -22,12 +28,102 @@
     flex-direction: column;
     width: 100%;
 
+    @media @bw1170 {
+      grid-area: inform;
+      display: grid;
+      grid-template-columns: 273px 233px 195px;
+      grid-template-areas:
+        "location home-alt start";
+      justify-items: center;
+    }
+
+    @media @bw768 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 40px;
+      grid-template-areas:
+        "location"
+        "home-alt"
+        "start";
+      justify-items: flex-start;
+    }
   }
 
   &__location,
   &__home-alt,
-  &__star {
+  &__start {
     margin-bottom: 79px;
+
+    @media @bw1170 {
+      margin-bottom: 0;
+    }
+
+    @media @bw768 {
+      justify-items: start;
+    }
+  }
+
+  &__location {
+    @media @bw1170 {
+      grid-area: location;
+      display: grid;
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square"
+        "blok";
+      justify-items: center;
+    }
+
+    @media @bw768 {
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square blok";
+
+    }
+  }
+
+  &__home-alt {
+    @media @bw1170 {
+      grid-area: home-alt;
+      display: grid;
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square"
+        "blok";
+      justify-items: center;
+    }
+
+    @media @bw768 {
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square blok";
+
+    }
+  }
+
+  &__start {
+    @media @bw1170 {
+      grid-area: start;
+      display: grid;
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square"
+        "blok";
+      justify-items: center;
+    }
+
+    @media @bw768 {
+      grid-template-rows: 110px 1fr;
+      gap: 30px 0;
+      grid-template-areas:
+        "square blok";
+
+    }
   }
 
   &__square {
@@ -41,9 +137,14 @@
     width: 110px;
     height: 110px;
     background-color: @black;
-    // display: block;
     position: relative;
     z-index: 1;
+
+    @media @bw1170 {
+      grid-area: square;
+      display: grid;
+      justify-items: center;
+    }
   }
 
   &__square-map {
@@ -56,9 +157,31 @@
     width: 750px;
     height: 491px;
     background-color: @black;
-    // display: block;
     position: relative;
     z-index: 1;
+
+    @media @bw1170 {
+      grid-area: square-map;
+    }
+
+    @media @bw768 {
+      max-width: 708px;
+      width: 100%;
+      object-fit: cover;
+      height: 463px;
+    }
+
+    @media @bw650 {
+      max-width: 500px;
+      width: 100%;
+      height: 327px;
+    }
+
+    @media @bw370 {
+      max-width: 280px;
+      width: 100%;
+      height: 186px;
+    }
   }
 
   &__symbol {
@@ -84,6 +207,13 @@
     font-family: @font1;
     font-size: 20px;
     font-weight: 600;
+
+    @media @bw1170 {
+      padding-left: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
   }
 
   &__content {
@@ -95,6 +225,11 @@
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
+
+    @media @bw1170 {
+      text-align: center;
+      padding-left: 0;
+    }
   }
 
   &__text {
@@ -105,12 +240,36 @@
     font-family: @font3;
     font-size: 128px;
     font-weight: 700;
-
+     @media @bw1170 {
+      font-size: 100px;
+    font-weight: 700;
+     }
+     @media @bw768 {
+      font-size: 80px;
+    font-weight: 700;
+     }
+     @media @bw370 {
+      font-size: 40px;
+    font-weight: 700;
+     }
   }
 
-  
+  &__blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-15px);
 
+    @media @bw1170 {
+      grid-area: blok;
+      align-items: center;
+      justify-content: flex-start;
+      transform: translateY(0);
+    }
 
-  
- 
+    @media @bw768 {
+      align-items: start;
+      margin-left: 10px;
+    }
+  }
 }
