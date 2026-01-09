@@ -29,5 +29,9 @@
     "build": "gulp build",
     "serve": "gulp serve",
     "start": "gulp start"
+  },
+  "dependencies": {
+    "atest": "^0.0.1",
+    "baseline-browser-mapping": "^1.0.0"
   }
 }
