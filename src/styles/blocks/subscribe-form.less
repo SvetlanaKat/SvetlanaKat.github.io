@@ -1,56 +1,82 @@
 .subscribe-form {
 
   &__title {
-margin-bottom: 14px;
+    margin-bottom: 14px;
     margin-top: 0;
     font-size: 16px;
     font-weight: 600;
     font-family: @font1;
     color: @black;
+
+    @media @bw370 {
+      font-size: 13px;
+      font-weight: 400;
+    }
   }
 
   &__wrapper {
-display: flex;
-width: 405px;
-height: 49px;
+    display: flex;
+    width: 405px;
+    height: 49px;
+
+    @media @bw1340 {
+      width: 387px;
+    }
+
+    @media @bw370 {
+      width: 300px;
+      height: 46px;
+    }
   }
 
   &__field-wrapper {
     flex-direction: column;
     width: 270px;
+    @media @bw1340 {
+      width: 252px;
+    }
+
+    @media @bw370 {
+      width: 184px;
+    }
 
   }
 
   &__input {
     font-weight: 400;
-  font-size: 14px;
-flex-direction: row;
-width: 270px;
-height: 49px;
-border: 0;
-padding-left: 28px;
+    font-size: 14px;
+    flex-direction: row;
+    width: 270px;
+    height: 49px;
+    border: 0;
+    padding-left: 28px;
   }
 
   &__submit {
-display: flex;
+    display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     width: 135px;
     height: 49px;
     font-weight: 400;
-  font-size: 14px;
-  font-family: @font1;
-  color: @white;
-  background-color: @black;
-  padding: 15px 23px;
-  z-index: 1;
-  transform: translateY(1px);
+    font-size: 14px;
+    font-family: @font1;
+    color: @white;
+    background-color: @black;
+    padding: 15px 23px;
+    z-index: 1;
+    transform: translateY(1px);
+    @media @bw370 {
+      width: 116px;
+    height: 47px;
+    font-size: 12px;
+    }
   }
 
   &__check {
-// display: block;
-margin-top: 15px;
+    // display: block;
+    margin-top: 15px;
   }
 
 }

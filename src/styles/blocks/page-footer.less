@@ -1,12 +1,27 @@
 .page-footer {
 
   &__container {
-
     .container();
+    @media @bw1340 {
+      margin: 0 40px 0 40px;
+    }
+    @media @bw768 {
+      margin: 0 30px 0 30px;
+    }
+     @media @bw370 {
+      margin: 0 10px 0 10px;
+max-width: 280px;
+     }
+    
   }
 
   &__inform {
     display: flex;
+    @media @bw650 {
+flex-direction: column;
+
+    }
+    
   }
 
   &__structure {
@@ -17,8 +32,6 @@
   &__subscribe-form {
     display: flex;
     flex-direction: column;
-    // flex: 1;
-    // display: flex;
   }
 
   &__script {
@@ -46,7 +59,7 @@
   &__nav-link {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 16px;
     font-weight: 600;
     color: @black;
@@ -54,6 +67,11 @@
     font-family: @font1;
     text-decoration: none;
     transition: color 0.2s;
+
+    @media @bw370 {
+      font-size: 14px;
+      margin-bottom: 27px;
+    }
 
     &:hover {
       color: @red_dark;
@@ -81,11 +99,11 @@
     width: 135px;
     height: 49px;
     font-weight: 400;
-  font-size: 14px;
-  font-family: @font1;
-  padding: 15px 23px;
-  z-index: 1;
-  
+    font-size: 14px;
+    font-family: @font1;
+    padding: 15px 23px;
+    z-index: 1;
+
   }
 
   &__label {
@@ -102,27 +120,95 @@
 
   &__feature {
     text-align: center;
+    justify-content: center;
     margin-bottom: 60px;
+    // max-width: 1334px;
+    // height: 2px;
+    width: 100%;
+    
+  }
+
+  &__icon {
+    justify-content: center;
+     max-width: 1334px;
+    height: 2px;
+    width: 100%;
+    @media @bw1340 {
+      max-width: 1260px;
+      margin: 0 40px 0 40px;
+    } 
+     @media @bw768 {
+      max-width: 708px;
+       margin: 0 30px 0 30px;
+     }
+      @media @bw370 {
+        max-width: 280px;
+       margin: 0 20px 0 20px;
+      }
+    
   }
 
   &__Millennials {
-    
     margin-top: 60px;
     font-size: 16px;
     font-weight: 400;
     font-family: @font1;
     color: @black;
+
+    @media @bw1170 {
+      display: block;
+      position: absolute;
+      bottom: 14px;
+      // transform: translateY(110px);
+      font-size: 14px;
+    }
+    @media @bw650 {
+      // transform: translateY(50px);
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__signature {
     position: relative;
+    width: 100%;
     margin-bottom: 73px;
     display: grid;
     gap: 22px 5px;
     grid-template-columns: 323px 265px 102px 344px 212px 80px 1fr;
-    // grid-template-columns: 405px calc(89% - 405px);
     grid-template-areas:
       "confident Cookies insta vk promotion logotip";
+
+    @media @bw1340 {
+      max-width: 1260px;
+      grid-template-columns: 300px 200px 102px 180px 212px 80px 1fr;
+    }
+
+    @media @bw1170 {
+      display: grid;
+      gap: 93px 5px;
+      width: 100%;
+      grid-template-rows: 118px 19px;
+      grid-template-columns: auto 150px auto 1fr;
+      grid-template-areas:
+        "insta insta vk vk"
+        "confident Cookies promotion logotip";
+    }
+
+     @media @bw650 {
+ display: grid;
+ width: 100%;
+      gap: 50px 1px;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "insta vk"
+        "confident confident"
+        "Cookies Cookies " 
+        "promotion logotip";
+     }
+
+
   }
 
   &__confident {
@@ -134,7 +220,10 @@
     text-decoration: none;
     display: inline-flex;
     height: 0;
-    // background-color: green;
+
+    @media @bw1170 {
+      font-size: 14px;
+    }
   }
 
   &__Cookies {
@@ -146,25 +235,54 @@
     text-decoration: none;
     display: inline-flex;
     height: 0;
-    // background-color: green;
+
+    @media @bw1170 {
+      font-size: 14px;
+    }
   }
 
   &__insta {
     grid-area: insta;
     position: absolute;
-    top: -40px;
+    top: -20px;
     display: inline-flex;
-    
-    // background-color: red;
+
+    @media @bw1170 {
+      display: grid;
+      grid-column: 2;
+      grid-row: 1;
+      position: relative;
+      justify-content: right;
+      margin-right: 20px;
+      align-items: end;
+    }
+     @media @bw650 {
+      grid-column: 1;
+      grid-row: 1;
+      margin-right: 15px;
+     }
   }
 
   &__vk {
     grid-area: vk;
     position: absolute;
-    top: -40px;
+    top: -20px;
     display: inline-flex;
-    
-    // background-color: red;
+
+    @media @bw1170 {
+      display: grid;
+      position: relative;
+      grid-column: 3;
+      grid-row: 1;
+      align-items: end;
+      justify-content: left;
+      margin-left: 20px;
+    }
+     @media @bw650 {
+      grid-column: 2;
+      grid-row: 1;
+      margin-left: 15px;
+     }
   }
 
   &__promotion {
@@ -176,7 +294,11 @@
     text-decoration: none;
     display: inline-flex;
     height: 0;
-    // background-color: red;
+
+    @media @bw1170 {
+      font-size: 14px;
+      justify-content: right;
+    }
   }
 
   &__logotip {
@@ -185,9 +307,13 @@
     top: -5px;
     color: @black;
     display: inline-flex;
-    
-    // background-color: blue;
+
+    @media @bw1170 {
+      width: 60px;
+      justify-content: right;
+    }
   }
+
   &__input {
     flex-direction: row;
   }

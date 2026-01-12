@@ -2534,6 +2534,7 @@ textarea:focus::placeholder {
   line-height: 22px;
 }
 .check__label--s {
+  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
 }
@@ -3511,7 +3512,7 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 16px;
   font-weight: 600;
   color: #1f1e1e;
@@ -3568,7 +3569,19 @@ textarea:focus::placeholder {
 }
 .page-footer__feature {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 60px;
+  width: 100%;
+}
+.page-footer__icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1334px;
+  height: 2px;
+  width: 100%;
 }
 .page-footer__Millennials {
   margin-top: 60px;
@@ -3579,6 +3592,7 @@ textarea:focus::placeholder {
 }
 .page-footer__signature {
   position: relative;
+  width: 100%;
   margin-bottom: 73px;
   display: grid;
   gap: 22px 5px;
@@ -3612,7 +3626,7 @@ textarea:focus::placeholder {
 .page-footer__insta {
   grid-area: insta;
   position: absolute;
-  top: -40px;
+  top: -20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3620,7 +3634,7 @@ textarea:focus::placeholder {
 .page-footer__vk {
   grid-area: vk;
   position: absolute;
-  top: -40px;
+  top: -20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4922,6 +4936,12 @@ __container__span {
     margin-left: 50px;
     margin-right: 0;
   }
+  .subscribe-form__wrapper {
+    width: 387px;
+  }
+  .subscribe-form__field-wrapper {
+    width: 252px;
+  }
   .upcoming__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4974,6 +4994,17 @@ __container__span {
   .page-footer__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .page-footer__container {
+    margin: 0 40px 0 40px;
+  }
+  .page-footer__icon {
+    max-width: 1260px;
+    margin: 0 40px 0 40px;
+  }
+  .page-footer__signature {
+    max-width: 1260px;
+    grid-template-columns: 300px 200px 102px 180px 212px 80px 1fr;
   }
   .reserve {
     gap: 65px 6.5%;
@@ -5127,6 +5158,64 @@ __container__span {
   }
   .about__arrow {
     left: 500px;
+  }
+  .page-footer__Millennials {
+    display: block;
+    position: absolute;
+    bottom: 14px;
+    font-size: 14px;
+  }
+  .page-footer__signature {
+    display: grid;
+    gap: 93px 5px;
+    width: 100%;
+    grid-template-rows: 118px 19px;
+    grid-template-columns: auto 150px auto 1fr;
+    grid-template-areas: "insta insta vk vk" "confident Cookies promotion logotip";
+  }
+  .page-footer__confident {
+    font-size: 14px;
+  }
+  .page-footer__Cookies {
+    font-size: 14px;
+  }
+  .page-footer__insta {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-right: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .page-footer__vk {
+    display: grid;
+    position: relative;
+    grid-column: 3;
+    grid-row: 1;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-left: 20px;
+  }
+  .page-footer__promotion {
+    font-size: 14px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .page-footer__logotip {
+    width: 60px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
   .contacts__container {
     display: grid;
@@ -5510,6 +5599,13 @@ __container__span {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .page-footer__container {
+    margin: 0 30px 0 30px;
+  }
+  .page-footer__icon {
+    max-width: 708px;
+    margin: 0 30px 0 30px;
+  }
   .reserve {
     grid-template-columns: 100%;
     grid-template-areas: "scheme" "legend" "checks" "order";
@@ -5748,6 +5844,34 @@ __container__span {
     margin-right: 25px;
     max-width: 680px;
   }
+  .page-footer__inform {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-footer__Millennials {
+    right: 0;
+    bottom: 0;
+  }
+  .page-footer__signature {
+    display: grid;
+    width: 100%;
+    gap: 50px 1px;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "insta vk" "confident confident" "Cookies Cookies " "promotion logotip";
+  }
+  .page-footer__insta {
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 15px;
+  }
+  .page-footer__vk {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 15px;
+  }
   .listing__events-list {
     gap: 60px 0;
     margin: 0 0 -60px;
@@ -5853,6 +5977,10 @@ __container__span {
   }
 }
 @media (max-width: 369px) {
+  .check__label--s {
+    font-weight: 400;
+    font-size: 12px;
+  }
   .article__content {
     max-width: 282px;
   }
@@ -5880,6 +6008,22 @@ __container__span {
   .article__paragraf {
     font-size: 14px;
     line-height: 19px;
+  }
+  .subscribe-form__title {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .subscribe-form__wrapper {
+    width: 300px;
+    height: 46px;
+  }
+  .subscribe-form__field-wrapper {
+    width: 184px;
+  }
+  .subscribe-form__submit {
+    width: 116px;
+    height: 47px;
+    font-size: 12px;
   }
   .about__title {
     font-size: 18px;
@@ -5910,6 +6054,18 @@ __container__span {
   .about__text1 {
     max-width: 280px;
     margin-left: 20px;
+  }
+  .page-footer__container {
+    margin: 0 10px 0 10px;
+    max-width: 280px;
+  }
+  .page-footer__nav-link {
+    font-size: 14px;
+    margin-bottom: 27px;
+  }
+  .page-footer__icon {
+    max-width: 280px;
+    margin: 0 20px 0 20px;
   }
   .contacts__square-map {
     max-width: 280px;
