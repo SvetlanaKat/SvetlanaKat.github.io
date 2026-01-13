@@ -275,7 +275,7 @@
     padding-left: 20px;
     margin-top: 50px;
 
-    @media @bw370 {
+    @media @bw768 {
       margin-top: 40px;
     }
 
@@ -302,5 +302,28 @@
       font-size: 14px;
       line-height: 19px;
     }
+  }
+
+  &__pic1 {
+     @media @bw768 {
+      max-width: 324px;
+      max-height: 215px;
+     }
+  }
+
+   &__bi_play {
+    position: absolute;
+    bottom: 180px;
+    right: 350px;
+    z-index: 1;
+  }
+
+  &__pic4 {
+    position: relative;
+
+     @media @bw768 {
+      max-width: 322px;
+      max-height: 214px;
+     }
   }
 }

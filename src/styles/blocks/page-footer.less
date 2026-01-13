@@ -1,27 +1,30 @@
 .page-footer {
+ 
 
   &__container {
     .container();
+
     @media @bw1340 {
       margin: 0 40px 0 40px;
     }
+
     @media @bw768 {
       margin: 0 30px 0 30px;
     }
-     @media @bw370 {
-      margin: 0 10px 0 10px;
-max-width: 280px;
-     }
-    
+
+    @media @bw370 {
+      margin: 0 20px 0 20px;
+      max-width: 280px;
+    }
+
   }
 
   &__inform {
     display: flex;
-    @media @bw650 {
-flex-direction: column;
 
+    @media @bw650 {
+      flex-direction: column;
     }
-    
   }
 
   &__structure {
@@ -67,6 +70,7 @@ flex-direction: column;
     font-family: @font1;
     text-decoration: none;
     transition: color 0.2s;
+   max-width: 230px;
 
     @media @bw370 {
       font-size: 14px;
@@ -89,7 +93,6 @@ flex-direction: column;
     font-weight: 600;
     font-family: @font1;
     color: @black;
-
   }
 
   &__submit {
@@ -103,7 +106,6 @@ flex-direction: column;
     font-family: @font1;
     padding: 15px 23px;
     z-index: 1;
-
   }
 
   &__label {
@@ -125,27 +127,30 @@ flex-direction: column;
     // max-width: 1334px;
     // height: 2px;
     width: 100%;
-    
+
   }
 
   &__icon {
     justify-content: center;
-     max-width: 1334px;
+    max-width: 1334px;
     height: 2px;
     width: 100%;
+
     @media @bw1340 {
       max-width: 1260px;
       margin: 0 40px 0 40px;
-    } 
-     @media @bw768 {
+    }
+
+    @media @bw768 {
       max-width: 708px;
-       margin: 0 30px 0 30px;
-     }
-      @media @bw370 {
-        max-width: 280px;
-       margin: 0 20px 0 20px;
-      }
-    
+      margin: 0 30px 0 30px;
+    }
+
+    @media @bw370 {
+      max-width: 280px;
+      margin: 0 20px 0 20px;
+    }
+
   }
 
   &__Millennials {
@@ -162,6 +167,7 @@ flex-direction: column;
       // transform: translateY(110px);
       font-size: 14px;
     }
+
     @media @bw650 {
       // transform: translateY(50px);
       right: 0;
@@ -195,20 +201,18 @@ flex-direction: column;
         "confident Cookies promotion logotip";
     }
 
-     @media @bw650 {
- display: grid;
- width: 100%;
+    @media @bw650 {
+      display: grid;
+      width: 100%;
       gap: 50px 1px;
       grid-template-rows: 1fr;
       grid-template-columns: auto;
       grid-template-areas:
         "insta vk"
         "confident confident"
-        "Cookies Cookies " 
+        "Cookies Cookies "
         "promotion logotip";
-     }
-
-
+    }
   }
 
   &__confident {
@@ -256,11 +260,12 @@ flex-direction: column;
       margin-right: 20px;
       align-items: end;
     }
-     @media @bw650 {
+
+    @media @bw650 {
       grid-column: 1;
       grid-row: 1;
       margin-right: 15px;
-     }
+    }
   }
 
   &__vk {
@@ -278,11 +283,12 @@ flex-direction: column;
       justify-content: left;
       margin-left: 20px;
     }
-     @media @bw650 {
+
+    @media @bw650 {
       grid-column: 2;
       grid-row: 1;
       margin-left: 15px;
-     }
+    }
   }
 
   &__promotion {
