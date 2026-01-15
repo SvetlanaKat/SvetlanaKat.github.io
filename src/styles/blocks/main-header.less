@@ -18,10 +18,12 @@
 &__Lenni {
   height: 325px;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 1920px;
+  max-width: 1920px;
   height: 325px;
+  width: 100%;
   flex-direction: column;
   position: relative;
   margin: 0 0 25px;
@@ -29,15 +31,21 @@
   text-decoration: none;
   overflow: hidden;
   margin: auto;
-  @media @bw1660 {
-    overflow: hidden;
-      width: 100%;
-      height: auto;
-    }
+  object-position: center;
+  object-fit: cover;
+  // @media @bw1660 {
+  //   overflow: hidden;
+  //     width: 100%;
+  //     height: auto;
+  //   }
    @media @bw1340 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     overflow: hidden;
-      width: 100%;
+      width: 1518px;
       height: auto;
+      transform: translateX(-90px);
     }
     @media @bw768 {  
       overflow: hidden;
@@ -55,13 +63,13 @@
   font-size: 45px;
   font-family: @font2;
   color: @black;
+  margin-bottom: 70px;
   @media @bw1340 {
       font-size: 35px;
     }
     @media @bw768 {
       font-size: 30px;
     }
-  
 }
 
 &__paragraph {
@@ -73,6 +81,8 @@
   font-size: 45px;
   font-family: @font2;
   color: @black;
+  margin-top: 70px;
+  margin-bottom: 100px;
 
   @media @bw1340 {
       font-size: 35px;
