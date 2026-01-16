@@ -2953,7 +2953,7 @@ textarea:focus::placeholder {
   margin-top: 15px;
 }
 .upcoming {
-  padding: 140px 0 100px;
+  padding: 110px 0 100px;
 }
 .upcoming__container {
   -webkit-box-sizing: border-box;
@@ -2989,6 +2989,7 @@ textarea:focus::placeholder {
   width: 100%;
   max-width: 1922px;
   height: 1236px;
+  max-height: 110%;
   background-color: rgba(255, 255, 255, 0.6);
   z-index: -1;
   -webkit-transform: translate(-50%, -50%);
@@ -3076,7 +3077,6 @@ textarea:focus::placeholder {
   padding-top: auto;
 }
 .about__img {
-  top: 18px;
   position: relative;
 }
 .about__img--1 {
@@ -3092,6 +3092,7 @@ textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  top: 18px;
   -webkit-transform: translateX(40px);
       -ms-transform: translateX(40px);
           transform: translateX(40px);
@@ -3127,9 +3128,7 @@ textarea:focus::placeholder {
   grid-area: arrow;
   grid-column: 2/3;
   grid-row: 2/3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -3968,7 +3967,8 @@ textarea:focus::placeholder {
   border: 2px;
   border-color: #bc3324;
   margin-top: 0;
-  width: 405px;
+  max-width: 405px;
+  width: 100%;
   height: 52px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -4320,7 +4320,7 @@ textarea:focus::placeholder {
   position: relative;
 }
 .events {
-  padding: 140px 0 100px;
+  padding: 110px 0 100px;
 }
 __container {
   -webkit-box-sizing: border-box;
@@ -4424,7 +4424,6 @@ __container__span {
   grid-area: text;
   text-align: center;
   width: 100%;
-  height: 58px;
   font-weight: 400;
   font-size: 45px;
   font-family: "Lora", serif;
@@ -4462,8 +4461,6 @@ __container__span {
 .offers__title {
   grid-area: text;
   text-align: center;
-  width: 100%;
-  height: 30px;
   font-weight: 400;
   font-size: 22px;
   font-family: "Lora", serif;
@@ -4878,9 +4875,6 @@ __container__span {
   .section-title {
     max-width: 604px;
   }
-  .section-title {
-    margin-bottom: 130px;
-  }
   .event-card__picture {
     margin-bottom: 0 0 20px;
   }
@@ -4938,7 +4932,7 @@ __container__span {
     max-width: 566px;
   }
   .section-title {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     padding: 11px 40px;
     max-width: 604px;
     max-height: 62px;
@@ -4958,8 +4952,8 @@ __container__span {
     right: 20px;
   }
   .article__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .article__content {
     max-width: 831px;
@@ -4984,13 +4978,16 @@ __container__span {
   .subscribe-form__field-wrapper {
     width: 252px;
   }
+  .upcoming {
+    padding: 100px 0 100px;
+  }
   .upcoming__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .about__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .about__block2 {
     gap: 100px 39px;
@@ -5040,16 +5037,16 @@ __container__span {
     margin-right: 40px;
   }
   .information__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .page-header__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .page-footer__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .page-footer__container {
     margin: 0 40px 0 40px;
@@ -5067,11 +5064,11 @@ __container__span {
   }
   .reserve {
     gap: 65px 6.5%;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 350px 1fr;
   }
   .listing {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .listing__events-list {
     -webkit-box-pack: center;
@@ -5084,27 +5081,27 @@ __container__span {
     margin: 0 15px 100px;
   }
   .contacts__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .contacts__text {
-    -webkit-transform: translateY(-740px);
-        -ms-transform: translateY(-740px);
-            transform: translateY(-740px);
     width: 1519px;
     font-size: 90px;
   }
   .event__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .events {
+    padding: 100px 0 100px;
   }
   __container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .main-header__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .main-header__Lenni {
     display: -webkit-box;
@@ -5130,16 +5127,16 @@ __container__span {
     font-size: 35px;
   }
   .offers__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .offers__btn {
     margin-right: 47px;
     margin-left: 47px;
   }
   .table__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .table__paragraph {
     width: 829px;
@@ -5248,7 +5245,6 @@ __container__span {
     margin-left: 0;
   }
   .about__arrow {
-    display: grid;
     -webkit-transform: translateY(100px);
         -ms-transform: translateY(100px);
             transform: translateY(100px);
@@ -5533,10 +5529,13 @@ __container__span {
     margin: 60px auto 0;
   }
   .section-title {
-    min-height: 42px;
-    margin-bottom: 80px;
-    padding: 11px 20px;
+    max-width: 566px;
+    max-height: 52px;
+    line-height: 1.1;
+    margin-bottom: 100px;
+    padding: 10px 40px;
     font-size: 20px;
+    font-size: 24px;
   }
   .event-card__title {
     min-height: 44px;
@@ -5562,8 +5561,8 @@ __container__span {
     top: 120px;
   }
   .article__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .article__content {
     max-width: 600px;
@@ -5612,13 +5611,29 @@ __container__span {
     max-width: 322px;
     max-height: 214px;
   }
+  .upcoming {
+    padding: 80px 0 43px;
+  }
   .upcoming__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .about__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__block1 {
+    max-width: 708px;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 80px;
+  }
+  .about__block2 {
+    gap: 40px 27px;
+    grid-template-rows: 470px 100px auto;
+  }
+  .about__block3 {
+    grid-template-columns: 280px auto;
   }
   .about__title {
     font-size: 26px;
@@ -5636,35 +5651,48 @@ __container__span {
   }
   .about__img--2 {
     max-width: 262px;
-    margin: 52px 30px 52px 27px;
+    margin: 0;
+    top: -35px;
+    left: -30px;
   }
   .about__img--3 {
     max-width: 672px;
     width: 100%;
+    top: 14px;
+    -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  .about__text,
+  .about__text1 {
+    font-size: 16px;
   }
   .about__text {
     max-width: 348px;
-    margin-left: 101px;
-    margin-right: 27px;
+    width: 100%;
+    margin-left: 71px;
   }
   .about__text1 {
     max-width: 637px;
-    margin-left: 101px;
-    margin-right: 30px;
+    width: 100%;
+    margin: 50px 30px 80px 71px;
+  }
+  .about__arrow {
+    max-width: 262px;
   }
   .about__link {
     width: 262px;
   }
   .information__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .page-header {
     height: 70px;
   }
   .page-header__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .page-header__logo {
     width: 96px;
@@ -5677,8 +5705,8 @@ __container__span {
     margin-left: 5px;
   }
   .page-footer__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .page-footer__container {
     margin: 0 30px 0 30px;
@@ -5692,8 +5720,8 @@ __container__span {
     grid-template-areas: "scheme" "legend" "checks" "order";
   }
   .listing {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .listing__events-list {
     margin: 0 -10px -80px;
@@ -5705,8 +5733,8 @@ __container__span {
     font-size: 14px;
   }
   .contacts__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .contacts__inform {
     grid-template-columns: 1fr;
@@ -5753,43 +5781,58 @@ __container__span {
     margin-left: 10px;
   }
   .event__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .events {
+    padding: 50px 0 35px;
   }
   __container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .main-header__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .main-header__Lenni {
     overflow: hidden;
+    max-width: 974px;
     width: 100%;
     height: auto;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
   .main-header__heading {
     font-size: 30px;
+    margin-bottom: 50px;
   }
   .main-header__paragraph {
     font-size: 30px;
+    margin-top: 49px;
+    margin-bottom: 73px;
+  }
+  .offers {
+    margin: 73px auto 130px;
   }
   .offers__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .offers__title {
     font-weight: 500;
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 43px;
   }
   .offers__btn {
     margin-right: 28px;
     margin-left: 28px;
   }
   .table__container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .table {
     display: block;
@@ -6058,10 +6101,17 @@ __container__span {
   }
 }
 @media (max-width: 369px) {
+  .section-title {
+    margin-bottom: 80px;
+  }
   .check__label--s {
     font-weight: 400;
     font-size: 12px;
     max-width: 241px;
+  }
+  .article__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .article__content {
     max-width: 282px;
@@ -6107,6 +6157,17 @@ __container__span {
   .subscribe-form__check {
     margin-left: 20px;
   }
+  .upcoming {
+    padding: 60px 0 100px;
+  }
+  .upcoming__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .about__block3 {
     max-width: 280px;
     margin-top: 50px;
@@ -6136,6 +6197,7 @@ __container__span {
         -ms-transform: translateX(20px);
             transform: translateX(20px);
     margin-right: 20px;
+    top: 5px;
   }
   .about__text {
     max-width: 280px;
@@ -6146,6 +6208,18 @@ __container__span {
   }
   .about__link {
     width: 280px;
+  }
+  .information__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-header__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .page-footer__container {
     margin: 0 20px 0 20px;
@@ -6159,6 +6233,14 @@ __container__span {
     max-width: 280px;
     margin: 0 20px 0 20px;
   }
+  .listing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contacts__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .contacts__square-map {
     max-width: 280px;
     width: 100%;
@@ -6167,6 +6249,29 @@ __container__span {
   .contacts__text {
     font-size: 40px;
     font-weight: 700;
+  }
+  .event__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .events {
+    padding: 60px 0 100px;
+  }
+  __container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-header__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .offers__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .table__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (hover: hover) {

@@ -1,16 +1,26 @@
 .events {
-  padding: 140px 0 100px;
+  padding: 110px 0 100px;
+
+  @media @bw1340 {
+    padding: 100px 0 100px;
+  }
+
+  @media @bw768 {
+    padding: 50px 0 35px;
+  }
+
+  @media @bw370 {
+    padding: 60px 0 100px;
+  }
 }
 
 &__container {
   .container();
-  
+
   &__listing {
     display: block;
     margin-bottom: 100px;
   }
-
-  
 
   &__services {
     margin-top: 100%;
@@ -26,6 +36,5 @@
     background-color: @black;
     text-decoration: none;
     transition: color 0.2s;
-   
   }
 }
