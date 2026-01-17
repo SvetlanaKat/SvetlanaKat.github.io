@@ -1,33 +1,25 @@
 .main-header {
+  @media @bw768 {
+    max-width: 768px;
+  }
+
+  @media @bw370 {
+    max-width: 370px;
+  }
 
   &__container {
     .container();
   }
 
-  &__container {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1414px;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    justify-content: space-between;
-  }
-
   &__Lenni {
-    height: 325px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
     max-width: 1920px;
     height: 325px;
     width: 100%;
-    flex-direction: column;
     position: relative;
-    margin: 0 0 25px;
     font-size: 0;
     text-decoration: none;
     overflow: hidden;
@@ -36,21 +28,23 @@
     object-fit: cover;
 
     @media @bw1340 {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      overflow: hidden;
       width: 1518px;
+      transform: translateX(-240px);
       height: auto;
-      transform: translateX(-90px);
     }
 
     @media @bw768 {
       overflow: hidden;
-      max-width: 974px;
-      width: 100%;
+      width: 974px;
+      transform: translateX(-130px);
       height: auto;
-      transform: translateX(0);
+    }
+
+    @media @bw370 {
+      overflow: hidden;
+      width: 437px;
+      transform: translateX(-30px);
+      height: auto;
     }
   }
 
@@ -62,6 +56,7 @@
     font-size: 45px;
     font-family: @font2;
     color: @black;
+    margin-top: 0;
     margin-bottom: 70px;
 
     @media @bw1340 {
@@ -71,6 +66,11 @@
     @media @bw768 {
       font-size: 30px;
       margin-bottom: 50px;
+    }
+
+    @media @bw370 {
+      font-size: 13px;
+      margin-bottom: 29px;
     }
   }
 
@@ -93,6 +93,16 @@
       font-size: 30px;
       margin-top: 49px;
       margin-bottom: 73px;
+    }
+
+    @media @bw650 {
+      font-size: 25px;
+    }
+
+    @media @bw370 {
+      font-size: 13px;
+      margin-top: 28px;
+      margin-bottom: 40px;
     }
   }
 }

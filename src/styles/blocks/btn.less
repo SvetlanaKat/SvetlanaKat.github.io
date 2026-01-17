@@ -15,7 +15,6 @@
   overflow: hidden;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  
 
   &:hover {
     background-color: @black;
@@ -26,8 +25,15 @@
     background-color: @red;
     border-color: @red;
     color: @white;
+
+    @media @bw650 {
+      order: 1;
+      font-size: 14px;
+      padding: 15px 70px;
+    }
+
     &:hover {
-      background-color: @red_dark; 
+      background-color: @red_dark;
       border-color: @red_dark;
     }
   }
@@ -40,7 +46,9 @@
 
   &--white {
     @media @bw650 {
-    order: -1;
+      order: -1;
+      font-size: 14px;
+      padding: 15px 70px;
     }
   }
 }

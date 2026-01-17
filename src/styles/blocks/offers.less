@@ -1,8 +1,20 @@
 .offers {
-  margin: 100px auto 200px;
+  margin-bottom: 200px;
 
   @media @bw768 {
-    margin: 73px auto 130px;
+    max-width: 768px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 130px;
+  }
+
+  @media @bw370 {
+    max-width: 370px;
+    margin-bottom: 100px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &__container {
@@ -30,11 +42,18 @@
     text-align: center;
 
     @media @bw650 {
-      display: block;
-      width: 280px;
-      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 550px;
+      width: 100%;
+      margin: 25px 20px;
       font-weight: 600;
       font-size: 14px;
+    }
+
+    @media @bw370 {
+      max-width: 320px;
     }
   }
 
@@ -58,6 +77,8 @@
       font-size: 14px;
       justify-content: center;
       margin-bottom: 25px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
