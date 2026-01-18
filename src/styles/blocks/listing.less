@@ -5,11 +5,16 @@
 
   .container();
 
+  // &__article-list {
+  //   @media @bw370 {
+  //     width: 300px;
+  //   }
+  // }
+
   &__events-list {
     display: flex;
     flex-wrap: wrap;
     gap: 115px 58px;
-   
 
     @media @bw1660 {
       justify-content: center;
@@ -129,6 +134,11 @@
     transition: color 0.2s;
     @media @bw768 {
       font-size: 14px;
+    }
+     @media @bw370 {
+      font-size: 14px;
+      width: 100px;
+      margin-top: 35px;
     }
 
     &:hover {
