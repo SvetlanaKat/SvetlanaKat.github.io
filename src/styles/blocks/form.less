@@ -1,9 +1,16 @@
 .form {
+  
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 0px 60px;
     // justify-content: space-between;
+
+     @media @bw370 {
+      display: flex;
+      flex-direction: column;
+    
+    }
   }
 
   &__field,
@@ -12,6 +19,11 @@
     width: 100%;
     &--w50 {
       width: calc(50% - 30px);
+       @media @bw370 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
     }
     &--m0 {
       margin: 0;
@@ -29,6 +41,9 @@
     margin: 0 0 10px;
     font-size: 18px;
     font-weight: 700;
+     @media @bw370 {
+      font-size: 16px;
+     }
   }
 
   &__check-list {
@@ -61,6 +76,11 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
+ @media @bw370 {
+      display: flex;
+      flex-direction: column;
+    }
+
 
   }
 
@@ -69,6 +89,10 @@
       width: calc(50% - 30px);
       display: flex;
       justify-content: center;
+@media @bw370 {
+  width: 100%;
+}
+      
     }
   }
 
@@ -81,10 +105,15 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.2s;
     &:hover {
       color: @red;
     }
+
+    @media @bw370{
+      margin-top: 30px
+    }
+    
   }
 }

@@ -2456,7 +2456,7 @@ textarea:focus::placeholder {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -2820,7 +2820,7 @@ textarea:focus::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 90px 50px;
+  padding: 0 90px 50px;
   backdrop-filter: blur(50px);
   background: rgba(28, 27, 27, 0.4);
   overflow: auto;
@@ -2840,7 +2840,7 @@ textarea:focus::placeholder {
           flex-direction: column;
   max-width: 1210px;
   width: 100%;
-  margin: auto;
+  margin: 90px auto auto;
   background-color: #dedede;
   background-image: url(.../assets/images/noise.png);
   background-position: 0 0, 0 0;
@@ -4955,6 +4955,12 @@ __container__span {
     margin-left: 50px;
     margin-right: 0;
   }
+  .pp__wrapper {
+    max-width: 1144px;
+  }
+  .pp__title {
+    margin: -40px 0 70px -25px;
+  }
   .subscribe-form__wrapper {
     width: 387px;
   }
@@ -5586,6 +5592,19 @@ __container__span {
     max-width: 322px;
     max-height: 214px;
   }
+  .pp {
+    padding: 0 40px 20px;
+  }
+  .pp__wrapper {
+    max-width: 688px;
+    margin: 72px auto auto;
+  }
+  .pp__title {
+    margin: -40px 0 70px -13px;
+    padding: 10px 59px 18px;
+    max-width: 465px;
+    min-height: 80px;
+  }
   .upcoming {
     padding: 80px 0 43px;
   }
@@ -6186,6 +6205,10 @@ __container__span {
   .swiper-pagination-bullet {
     width: 9px;
   }
+  .x-btn {
+    width: 36px;
+    height: 36px;
+  }
   .arrow__icon {
     width: 67px;
     height: 40px;
@@ -6205,6 +6228,44 @@ __container__span {
     position: relative;
     left: 175px;
     top: 150px;
+  }
+  .form__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__field--w50,
+  .form__group--w50 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .form__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__submit--w50 {
+    width: 100%;
+  }
+  .form__close-btn {
+    margin-top: 30px;
   }
   .check__label--s {
     font-weight: 400;
@@ -6241,6 +6302,27 @@ __container__span {
   .article__paragraf {
     font-size: 14px;
     line-height: 19px;
+  }
+  .pp {
+    padding: 0 20px 20px 20px;
+  }
+  .pp__wrapper {
+    max-width: 280px;
+    margin: 80px auto auto;
+  }
+  .pp__x-btn {
+    top: -15px;
+    right: -15px;
+  }
+  .pp__container {
+    padding: 0 20px 20px;
+  }
+  .pp__title {
+    margin: -40px 0 40px -13px;
+    padding: 10px 22px 20px;
+    max-width: 225px;
+    min-height: 77px;
+    font-size: 14px;
   }
   .subscribe-form__title {
     font-size: 13px;

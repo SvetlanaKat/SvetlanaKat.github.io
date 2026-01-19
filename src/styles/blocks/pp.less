@@ -5,12 +5,20 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 90px 50px;
+  padding: 0 90px 50px;
   backdrop-filter: blur(50px);
   background: rgba(28, 27, 27, 0.4);
   overflow: auto;
   z-index: 110;
   display: none;
+
+  @media @bw768 {
+    padding: 0 40px 20px;
+  }
+
+  @media @bw370 {
+    padding: 0 20px 20px 20px;
+  }
 
   &__wrapper {
     box-sizing: border-box;
@@ -19,12 +27,26 @@
     flex-direction: column;
     max-width: 1210px;
     width: 100%;
-    margin: auto;
+    margin: 90px auto auto;
     background-color: @gray;
     background-image: url(.../assets/images/noise.png);
     background-position: 0 0, 0 0;
     background-size: auto 100% auto;
     background-repeat: repeat, repeat-y;
+
+    @media @bw1340 {
+      max-width: 1144px;
+    }
+
+    @media @bw768 {
+      max-width: 688px;
+      margin: 72px auto auto;
+    }
+
+    @media @bw370 {
+      max-width: 280px;
+      margin: 80px auto auto;
+    }
   }
 
   &__sticky-close {
@@ -35,11 +57,17 @@
     height: 0;
   }
 
-  
+
   &__x-btn {
     position: absolute;
     top: -30px;
     right: -30px;
+
+    @media @bw370 {
+      top: -15px;
+    right: -15px;
+    }
+    
   }
 
   &__container {
@@ -48,7 +76,13 @@
     max-width: 1040px;
     margin: 0 auto;
     padding: 0 40px 40px;
+
+     @media @bw370 {
+       padding: 0 20px 20px;
+     }
+
   }
+
   &__title {
     position: relative;
     box-sizing: border-box;
@@ -68,5 +102,25 @@
     color: @white;
     letter-spacing: 0.02em;
     z-index: 1;
+
+    @media @bw1340 {
+      margin: -40px 0 70px -25px;
+    }
+
+    @media @bw768 {
+      margin: -40px 0 70px -13px;
+      padding: 10px 59px 18px;
+      max-width: 465px;
+      min-height: 80px;
+    }
+
+    @media @bw370 {
+       margin: -40px 0 40px -13px;
+      padding: 10px 22px 20px;
+      max-width: 225px;
+      min-height: 77px;
+      font-size: 14px;
+    }
   }
+
 }
