@@ -2668,6 +2668,8 @@ textarea:focus::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .article__Sade {
   display: -webkit-box;
@@ -3668,7 +3670,7 @@ textarea:focus::placeholder {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 265px;
-  height: 20px;
+  height: 0;
 }
 .page-footer__insta {
   grid-area: insta;
@@ -3707,7 +3709,7 @@ textarea:focus::placeholder {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  height: 20px;
+  height: 0;
   width: 499px;
 }
 .page-footer__logotip {
@@ -5563,6 +5565,7 @@ __container__span {
     max-width: 600px;
   }
   .article__title {
+    max-width: 468px;
     font-size: 40px;
     margin-bottom: 64px;
   }
@@ -6145,6 +6148,9 @@ __container__span {
   .section-title {
     max-width: 480px;
   }
+  .article__title {
+    font-size: 30px;
+  }
   .table__paragraph {
     width: 300px;
   }
@@ -6195,6 +6201,9 @@ __container__span {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 56px;
+  }
+  .article__title {
+    font-size: 20px;
   }
   .about {
     max-width: 460px;
@@ -6312,9 +6321,7 @@ __container__span {
     max-width: 282px;
   }
   .article__title {
-    font-size: 20px;
     margin-bottom: 40px;
-    max-width: 320px;
   }
   .article__picture {
     margin-bottom: 60px;
@@ -6361,16 +6368,26 @@ __container__span {
     font-weight: 400;
   }
   .subscribe-form__wrapper {
-    width: 320px;
+    width: 370px;
     height: 46px;
   }
   .subscribe-form__field-wrapper {
     width: 184px;
   }
+  .subscribe-form__input {
+    height: 46px;
+    width: 370px;
+    -webkit-transform: translateX(-45px);
+        -ms-transform: translateX(-45px);
+            transform: translateX(-45px);
+  }
   .subscribe-form__submit {
     width: 116px;
     height: 47px;
     font-size: 12px;
+    -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+            transform: translateX(30px);
   }
   .subscribe-form__check {
     margin-left: 20px;
@@ -6464,6 +6481,10 @@ __container__span {
   .page-footer__container {
     margin: 0 20px 0 20px;
     max-width: 280px;
+  }
+  .page-footer__subscribe-form {
+    width: 370px;
+    margin-right: 0;
   }
   .page-footer__nav-link {
     font-size: 14px;

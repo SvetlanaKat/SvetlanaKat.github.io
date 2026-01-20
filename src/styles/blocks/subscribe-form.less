@@ -24,7 +24,7 @@
     }
 
     @media @bw370 {
-      width: 320px;
+      width: 370px;
       height: 46px;
     }
   }
@@ -32,7 +32,7 @@
   &__field-wrapper {
     flex-direction: column;
     width: 270px;
-    
+
     @media @bw1340 {
       width: 252px;
     }
@@ -40,7 +40,6 @@
     @media @bw370 {
       width: 184px;
     }
-
   }
 
   &__input {
@@ -51,8 +50,11 @@
     height: 49px;
     border: 0;
     padding-left: 28px;
-     @media @bw370 {
-      
+
+    @media @bw370 {
+      height: 46px;
+      width: 370px;
+      transform: translateX(-45px);
     }
   }
 
@@ -72,20 +74,20 @@
     z-index: 1;
     transform: translateY(1px);
     cursor: pointer;
+
     @media @bw370 {
       width: 116px;
-    height: 47px;
-    font-size: 12px;
+      height: 47px;
+      font-size: 12px;
+      transform: translateX(30px);
     }
   }
 
   &__check {
-    // display: block;
     margin-top: 15px;
-  @media @bw370 {
-    margin-left: 20px;
-  }
 
+    @media @bw370 {
+      margin-left: 20px;
+    }
   }
-
 }
