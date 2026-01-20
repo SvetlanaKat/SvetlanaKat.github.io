@@ -337,7 +337,7 @@ body {
           flex-direction: column;
   position: relative;
   min-height: 100vh;
-  min-width: 680px;
+  min-width: 370px;
   padding-top: 147px;
   background-color: #dedede;
   background-image: url(.../assets/images/noise.png);
@@ -2842,7 +2842,7 @@ textarea:focus::placeholder {
   width: 100%;
   margin: 90px auto auto;
   background-color: #dedede;
-  background-image: url(.../assets/images/noise.png);
+  background-image: url(../assets/images/noise.png);
   background-position: 0 0, 0 0;
   background-size: auto 100% auto;
   background-repeat: repeat, repeat-y;
@@ -2957,7 +2957,7 @@ textarea:focus::placeholder {
   margin-top: 15px;
 }
 .upcoming {
-  padding: 110px 0 100px;
+  padding: 100px 0 100px;
 }
 .upcoming__container {
   -webkit-box-sizing: border-box;
@@ -2986,6 +2986,7 @@ textarea:focus::placeholder {
   position: relative;
 }
 .upcoming__wrapper::before {
+  display: block;
   content: '';
   position: absolute;
   top: 50%;
@@ -2993,12 +2994,13 @@ textarea:focus::placeholder {
   width: 100%;
   max-width: 1922px;
   height: 1236px;
-  max-height: 110%;
-  background-color: rgba(255, 255, 255, 0.6);
   z-index: -1;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: 1922px 1236px;
+  background-image: url(../assets/images/rectangle.svg);
 }
 .about {
   position: relative;
@@ -3036,7 +3038,7 @@ textarea:focus::placeholder {
   width: 100%;
   margin-top: 74px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 110px;
+  grid-template-rows: 1fr 2px;
   gap: 22px 62px;
   grid-template-areas: "pic3 text2" "pic3 arrow";
 }
@@ -3637,10 +3639,9 @@ textarea:focus::placeholder {
   position: relative;
   width: 100%;
   margin-bottom: 73px;
-  display: grid;
-  gap: 22px 5px;
-  grid-template-columns: 323px 265px 102px 344px 212px 80px 1fr;
-  grid-template-areas: "confident Cookies insta vk promotion logotip";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .page-footer__confident {
   grid-area: confident;
@@ -3653,6 +3654,8 @@ textarea:focus::placeholder {
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 0;
+  width: 323px;
+  padding-right: 60px;
 }
 .page-footer__Cookies {
   grid-area: Cookies;
@@ -3664,23 +3667,32 @@ textarea:focus::placeholder {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 0;
+  width: 265px;
+  height: 20px;
 }
 .page-footer__insta {
   grid-area: insta;
-  position: absolute;
+  position: relative;
+  right: -9px;
   top: -20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 80px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .page-footer__vk {
   grid-area: vk;
-  position: absolute;
+  position: relative;
   top: -20px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  right: -9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
 }
 .page-footer__promotion {
   grid-area: promotion;
@@ -3692,16 +3704,24 @@ textarea:focus::placeholder {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 20px;
+  width: 499px;
 }
 .page-footer__logotip {
   grid-area: logotip;
-  position: absolute;
-  top: -5px;
+  position: relative;
+  top: -3px;
+  right: -4px;
   color: #1f1e1e;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 35px;
+  width: 89px;
+  text-align: end;
 }
 .page-footer__input {
   -webkit-box-orient: horizontal;
@@ -4100,7 +4120,7 @@ textarea:focus::placeholder {
   -ms-flex-item-align: end;
       align-self: flex-end;
   float: right;
-  margin-top: 85px;
+  margin-top: 15px;
   font-size: 16px;
   font-weight: 600;
   color: #1f1e1e;
@@ -4131,6 +4151,8 @@ textarea:focus::placeholder {
           align-items: center;
   max-width: 1334px;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .contacts {
   -webkit-box-sizing: border-box;
@@ -4347,6 +4369,7 @@ __container__listing {
 }
 __container__services {
   margin-top: 100%;
+  margin-bottom: 50px;
 }
 __container__span {
   display: -webkit-box;
@@ -5037,9 +5060,6 @@ __container__span {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .page-footer__container {
-    margin: 0 40px 0 40px;
-  }
   .page-footer__subscribe-form {
     margin-right: 40px;
   }
@@ -5047,9 +5067,36 @@ __container__span {
     max-width: 1260px;
     margin: 0 40px 0 40px;
   }
-  .page-footer__signature {
-    max-width: 1260px;
-    grid-template-columns: 300px 200px 102px 180px 212px 80px 1fr;
+  .page-footer__confident {
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  .page-footer__Cookies {
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  .page-footer__insta {
+    right: 170px;
+    top: 0;
+    position: absolute;
+  }
+  .page-footer__vk {
+    right: 130px;
+    top: 0;
+    position: absolute;
+  }
+  .page-footer__promotion {
+    width: 280px;
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  .page-footer__logotip {
+    -webkit-transform: translateY(75px);
+        -ms-transform: translateY(75px);
+            transform: translateY(75px);
   }
   .reserve {
     gap: 65px 6.5%;
@@ -5239,45 +5286,12 @@ __container__span {
     bottom: 14px;
     font-size: 14px;
   }
-  .page-footer__signature {
-    display: grid;
-    gap: 93px 5px;
-    width: 100%;
-    grid-template-rows: 118px 19px;
-    grid-template-columns: auto 150px auto 1fr;
-    grid-template-areas: "insta insta vk vk" "confident Cookies promotion logotip";
-  }
   .page-footer__confident {
     font-size: 14px;
+    padding-right: 10px;
   }
   .page-footer__Cookies {
     font-size: 14px;
-  }
-  .page-footer__insta {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-    position: relative;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    margin-right: 20px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-  }
-  .page-footer__vk {
-    display: grid;
-    position: relative;
-    grid-column: 3;
-    grid-row: 1;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-left: 20px;
   }
   .page-footer__promotion {
     font-size: 14px;
@@ -5710,6 +5724,43 @@ __container__span {
     max-width: 708px;
     margin: 0 30px 0 30px;
   }
+  .page-footer__Millennials {
+    right: 40px;
+    bottom: 20px;
+  }
+  .page-footer__Millennials {
+    right: -20px;
+  }
+  .page-footer__signature {
+    max-width: 600px;
+    height: 288px;
+  }
+  .page-footer__confident {
+    position: absolute;
+  }
+  .page-footer__Cookies {
+    -webkit-transform: translateY(180px);
+        -ms-transform: translateY(180px);
+            transform: translateY(180px);
+    position: absolute;
+  }
+  .page-footer__insta {
+    top: 30px;
+  }
+  .page-footer__vk {
+    top: 30px;
+  }
+  .page-footer__promotion {
+    -webkit-transform: translateY(270px);
+        -ms-transform: translateY(270px);
+            transform: translateY(270px);
+    width: 600px;
+  }
+  .page-footer__logotip {
+    -webkit-transform: translateY(135px);
+        -ms-transform: translateY(135px);
+            transform: translateY(135px);
+  }
   .reserve {
     grid-template-columns: 100%;
     grid-template-areas: "scheme" "legend" "checks" "order";
@@ -6045,35 +6096,13 @@ __container__span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .page-footer__Millennials {
-    right: 0;
-    bottom: 0;
-  }
-  .page-footer__signature {
-    display: grid;
+  .listing {
     width: 100%;
-    gap: 50px 1px;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "insta vk" "confident confident" "Cookies Cookies " "promotion logotip";
-  }
-  .page-footer__insta {
-    grid-column: 1;
-    grid-row: 1;
-    margin-right: 15px;
-  }
-  .page-footer__vk {
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 15px;
-  }
-  .listing__events-list {
-    gap: 60px 0;
-    margin: 0 0 -60px;
+    mmin-width: 280px;
   }
   .listing__event-card {
     width: 100%;
-    margin: 0 0 60px;
+    margin: 0;
   }
   .contacts__square-map {
     max-width: 500px;
@@ -6194,7 +6223,7 @@ __container__span {
     font-size: 14px;
   }
   .table__paragraph {
-    width: 208px;
+    width: 280px;
   }
 }
 @media (max-width: 369px) {
@@ -6223,6 +6252,9 @@ __container__span {
     margin-right: 39px;
     padding: 11px 19px 11px;
     min-height: 42px;
+  }
+  .event-card__picture {
+    max-width: 280px;
   }
   .article-card__arrow {
     position: relative;
@@ -6441,14 +6473,32 @@ __container__span {
     max-width: 280px;
     margin: 0 20px 0 20px;
   }
+  .page-footer__signature {
+    width: 280px;
+  }
+  .page-footer__insta {
+    right: 60px;
+  }
+  .page-footer__vk {
+    right: 20px;
+  }
   .listing {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .listing__events-list {
+    gap: 60px 0;
+    margin: 0 auto 0 auto;
+    width: 280px;
+    max-width: 100%;
   }
   .listing__link {
     font-size: 14px;
     width: 100px;
     margin-top: 35px;
+  }
+  .listing__link--centre {
+    max-width: 370px;
   }
   .contacts__container {
     padding-left: 20px;
@@ -6478,9 +6528,6 @@ __container__span {
   .event__container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .events {
-    padding: 60px 0 100px;
   }
   __container {
     padding-left: 20px;
@@ -6528,6 +6575,11 @@ __container__span {
   .table__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .table {
+    display: block;
+    margin: 0 -20px;
+    width: calc(100% - 280px);
   }
 }
 @media (hover: hover) {

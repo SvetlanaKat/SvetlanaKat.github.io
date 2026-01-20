@@ -1,12 +1,7 @@
 .page-footer {
- 
 
   &__container {
     .container();
-
-    @media @bw1340 {
-      margin: 0 40px 0 40px;
-    }
 
     @media @bw768 {
       margin: 0 30px 0 30px;
@@ -16,7 +11,6 @@
       margin: 0 20px 0 20px;
       max-width: 280px;
     }
-
   }
 
   &__inform {
@@ -74,7 +68,7 @@
     font-family: @font1;
     text-decoration: none;
     transition: color 0.2s;
-   max-width: 230px;
+    max-width: 230px;
 
     @media @bw370 {
       font-size: 14px;
@@ -128,8 +122,6 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 60px;
-    // max-width: 1334px;
-    // height: 2px;
     width: 100%;
 
   }
@@ -154,7 +146,6 @@
       max-width: 280px;
       margin: 0 20px 0 20px;
     }
-
   }
 
   &__Millennials {
@@ -168,14 +159,16 @@
       display: block;
       position: absolute;
       bottom: 14px;
-      // transform: translateY(110px);
       font-size: 14px;
     }
 
-    @media @bw650 {
-      // transform: translateY(50px);
-      right: 0;
-      bottom: 0;
+    @media @bw768 {
+      right: 40px;
+      bottom: 20px;
+    }
+    @media @bw768 {
+      right: -20px;
+      
     }
   }
 
@@ -183,40 +176,15 @@
     position: relative;
     width: 100%;
     margin-bottom: 73px;
-    display: grid;
-    gap: 22px 5px;
-    grid-template-columns: 323px 265px 102px 344px 212px 80px 1fr;
-    grid-template-areas:
-      "confident Cookies insta vk promotion logotip";
+    display: flex;
 
-    @media @bw1340 {
-      max-width: 1260px;
-      grid-template-columns: 300px 200px 102px 180px 212px 80px 1fr;
+    @media @bw768 {
+      max-width: 600px;
+      height: 288px;
     }
-
-    @media @bw1170 {
-      display: grid;
-      gap: 93px 5px;
-      width: 100%;
-      grid-template-rows: 118px 19px;
-      grid-template-columns: auto 150px auto 1fr;
-      grid-template-areas:
-        "insta insta vk vk"
-        "confident Cookies promotion logotip";
-    }
-
-    @media @bw650 {
-      display: grid;
-      width: 100%;
-      gap: 50px 1px;
-      grid-template-rows: 1fr;
-      grid-template-columns: auto;
-      grid-template-areas:
-        "insta vk"
-        "confident confident"
-        "Cookies Cookies "
-        "promotion logotip";
-    }
+     @media @bw370 {
+      width: 280px;
+     }
   }
 
   &__confident {
@@ -228,9 +196,20 @@
     text-decoration: none;
     display: inline-flex;
     height: 0;
+    width: 323px;
+    padding-right: 60px;
+
+    @media @bw1340 {
+      transform: translateY(150px);
+    }
 
     @media @bw1170 {
       font-size: 14px;
+      padding-right: 10px;
+    }
+
+    @media @bw768 {
+      position: absolute;
     }
   }
 
@@ -242,56 +221,68 @@
     color: @black;
     text-decoration: none;
     display: inline-flex;
-    height: 0;
+    width: 265px;
+    height: 20px;
+
+    @media @bw1340 {
+      transform: translateY(150px);
+    }
 
     @media @bw1170 {
       font-size: 14px;
+    }
+
+    @media @bw768 {
+      transform: translateY(180px);
+      position: absolute;
     }
   }
 
   &__insta {
     grid-area: insta;
-    position: absolute;
+    position: relative;
+    right: -9px;
     top: -20px;
     display: inline-flex;
+    width: 80px;
+    margin: 0 auto;
+    justify-content: center;
 
-    @media @bw1170 {
-      display: grid;
-      grid-column: 2;
-      grid-row: 1;
-      position: relative;
-      justify-content: right;
-      margin-right: 20px;
-      align-items: end;
+    @media @bw1340 {
+      right: 170px;
+      top: 0;
+      position: absolute;
     }
 
-    @media @bw650 {
-      grid-column: 1;
-      grid-row: 1;
-      margin-right: 15px;
+    @media @bw768 {
+      top: 30px;
+    }
+
+     @media @bw370 {
+      right: 60px;
     }
   }
 
   &__vk {
     grid-area: vk;
-    position: absolute;
+    position: relative;
     top: -20px;
-    display: inline-flex;
+    right: -9px;
+    display: flex;
+    width: 80px;
 
-    @media @bw1170 {
-      display: grid;
-      position: relative;
-      grid-column: 3;
-      grid-row: 1;
-      align-items: end;
-      justify-content: left;
-      margin-left: 20px;
+    @media @bw1340 {
+      right: 130px;
+      top: 0;
+      position: absolute;
     }
 
-    @media @bw650 {
-      grid-column: 2;
-      grid-row: 1;
-      margin-left: 15px;
+    @media @bw768 {
+      top: 30px;
+    }
+
+    @media @bw370 {
+      right: 20px;
     }
   }
 
@@ -303,29 +294,53 @@
     color: @black;
     text-decoration: none;
     display: inline-flex;
-    height: 0;
+    justify-content: end;
+    height: 20px;
+    width: 499px;
+
+    @media @bw1340 {
+      width: 280px;
+      transform: translateY(150px);
+    }
 
     @media @bw1170 {
       font-size: 14px;
       justify-content: right;
     }
+
+    @media @bw768 {
+
+      transform: translateY(270px);
+      width: 600px;
+    }
   }
 
   &__logotip {
     grid-area: logotip;
-    position: absolute;
-    top: -5px;
+    position: relative;
+    top: -3px;
+    right: -4px;
     color: @black;
     display: inline-flex;
+    height: 35px;
+    width: 89px;
+    text-align: end;
+
+    @media @bw1340 {
+      transform: translateY(75px);
+    }
 
     @media @bw1170 {
       width: 60px;
       justify-content: right;
+    }
+
+    @media @bw768 {
+      transform: translateY(135px);
     }
   }
 
   &__input {
     flex-direction: row;
   }
-
 }
